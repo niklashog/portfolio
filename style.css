@@ -1,5 +1,13 @@
-/* START of Reset */
+/* Table of Contents
 
+0. Basic css reset
+1. CSS Custom Properties
+
+
+Table of Contents */
+
+
+/* 0. START of Reset */
 *,
 *::before,
 *::after{
@@ -13,3 +21,13 @@ ol {
 }
 /* END of Reset */
 
+
+/* 1. START CSS Custom Properties */
+:root{
+  --primary-color: rgb(50, 45, 57);
+  --toupe-color: rgb(139, 135, 143);
+  --timber-color: rgb(211, 208, 203);
+  --accent-color: rgb(133, 112, 171);
+  --background-color: rgb(236, 235, 230);
+}
+/* END CSS Custom Properties */
