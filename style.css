@@ -2,7 +2,7 @@
 
 0. Basic css reset
 1. CSS Custom Properties
-
+2. Navbar & Header
 
 Table of Contents */
 
@@ -31,3 +31,24 @@ ol {
   --background-color: rgb(236, 235, 230);
 }
 /* END CSS Custom Properties */
+
+
+/* START Navbar & Header */
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  height: 5em;
+  width: 100%;
+  z-index: 1;
+}
+nav ul{
+  display: flex;
+}
+nav ul a{
+padding: 0em 0.5em;
+}
+
+
+/* END Navbar & Header */
