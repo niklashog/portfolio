@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
+
 /* Table of Contents
 
 0. Basic css reset
 1. CSS Custom Properties
-
+2. Navbar & Header
 
 Table of Contents */
 
@@ -31,3 +33,36 @@ ol {
   --background-color: rgb(236, 235, 230);
 }
 /* END CSS Custom Properties */
+
+
+/* START Navbar & Header */
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  height: 5em;
+  width: 100%;
+  background: var(--background-color);
+  border-bottom: var(--timber-color);
+  z-index: 1;
+}
+nav ul{
+  display: flex;
+}
+nav ul a{
+  font-size: 1.4em;
+  font-family: 'Alegreya', Cochin, Cambria, Georgia, Times, 'Times New Roman', serif;
+  color: var(--primary-color);
+  padding: 0em 0.5em;
+  text-decoration: none;
+}
+nav a:hover{
+  text-decoration: underline;
+}
+nav a:active{
+  opacity: 0.6;
+}
+
+
+/* END Navbar & Header */
