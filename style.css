@@ -105,6 +105,12 @@ article{
 h2, h3{
   font-family: 'Alegreya', 'Vollkorn', Cochin, Cambria, Georgia, Times, 'Times New Roman', serif;
 }
+
+a{
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: transform 0.1s, background-color 0.2s ease; 
+}
 /* END of Global styling */
 
 
