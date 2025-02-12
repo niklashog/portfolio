@@ -69,6 +69,15 @@ nav a:active{
 
 
 /* 3. START of Global styling */
+body, html {
+  line-height: 1.5;
+  font-size: 1em;
+  color: var(--primary-color);
+  background: var(--background-color);
+  font-family: "IBM Plex Mono", "Helvetica", sans-serif;
+
+}
+
 main{
   display: flex;
   align-items: center;
