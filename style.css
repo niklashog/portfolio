@@ -87,6 +87,9 @@ section{
 article{
   max-width: 600px;
 }
+h2, h3{
+  font-family: 'Alegreya', 'Vollkorn', Cochin, Cambria, Georgia, Times, 'Times New Roman', serif;
+}
 /* END of Global styling */
 
 
