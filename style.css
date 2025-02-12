@@ -143,6 +143,26 @@ a:active{
 }
 /* END of Global styling */
 
+/* START of About Me */
+#about-me-left{
+}
+#about-me-right{
+  padding-left: 2em;
+}
+#my-picture-container{
+  width: 250px;
+  min-height: 400px;
+  max-height: 500px;
+  background-position-x: center;
+  background-size: cover;
+  background-image: url('niklas-edited-vintage.jpg');
+  transform: scaleX(-1);
+  background-color: var(--background-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 20px;
+  padding: 1em;
+}
+/* END of About Me */
 
 
 /* START of Project Cards */
