@@ -5,6 +5,7 @@
 0. Basic css reset
 1. CSS Custom Properties
 2. Navbar & Header
+3. Global styling
 x. Footer
 
 Table of Contents */
@@ -64,9 +65,12 @@ nav a:hover{
 nav a:active{
   opacity: 0.6;
 }
-
-
 /* END Navbar & Header */
+
+/* 3. START of Global styling */
+
+
+/* END of Global styling */
 
 
 
