@@ -135,10 +135,6 @@ a:active{
   width: 10.5em;
   height: 18em;
   background-color: var(--background-color);
-  /* border-top: 2px solid var(--toupe-color);
-  border-left: 2px solid var(--toupe-color);
-  border-right: 2px solid var(--toupe-color);
-  border-bottom: 2px solid var(--toupe-color); */
   border: 1px solid var(--toupe-color);
   border-radius: 10px;
   padding: 1em;
@@ -150,12 +146,9 @@ a:active{
   border-right: 2px solid;
 }
 .project-card:active{
+  opacity: 0.95;
   background-color: rgb(218, 165, 191);
   color: rgb(67, 29, 67);
-  border-top: 2px solid;
-  border-left: 2px solid;
-  border-bottom: 1px solid;
-  border-right: 1px solid;
 }
 .project-icon-container{
   height: 35%;
