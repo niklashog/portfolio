@@ -147,7 +147,6 @@ a:active{
 #about-me-left{
 }
 #about-me-right{
-  padding-left: 2em;
 }
 #my-picture-container{
   width: 250px;
@@ -160,7 +159,7 @@ a:active{
   background-color: var(--background-color);
   border: 2px solid var(--primary-color);
   border-radius: 20px;
-  padding: 1em;
+  margin-right: 2.5em;
 }
 /* END of About Me */
 
