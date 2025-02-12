@@ -5,6 +5,7 @@
 0. Basic css reset
 1. CSS Custom Properties
 2. Navbar & Header
+3. Global styling
 x. Footer
 
 Table of Contents */
@@ -64,14 +65,18 @@ nav a:hover{
 nav a:active{
   opacity: 0.6;
 }
-
-
 /* END Navbar & Header */
 
 
+/* 3. START of Global styling */
 
 
-/* START Footer */
+/* END of Global styling */
+
+
+
+
+/* x. START of Footer */
 footer{
   display: flex;
   align-items: center;
@@ -102,4 +107,4 @@ footer{
 .socials-button:active{
   opacity: 0.4;
 }
-/* END Footer */
+/* END of Footer */
