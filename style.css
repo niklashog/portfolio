@@ -86,5 +86,20 @@ footer{
   justify-content: center;
   align-items: center;
 }
-
+.socials-button,
+.socials-button:visited{
+  width: 45px;
+  height: 45px;
+  color: var(--toupe-color);
+  font-size: 2em;
+  cursor: pointer;
+  padding-right: 1em;
+}
+.socials-button:hover{
+  color: var(--primary-color);
+  opacity: 0.8;
+}
+.socials-button:active{
+  opacity: 0.4;
+}
 /* END Footer */
