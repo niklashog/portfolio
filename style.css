@@ -5,6 +5,7 @@
 0. Basic css reset
 1. CSS Custom Properties
 2. Navbar & Header
+x. Footer
 
 Table of Contents */
 
@@ -66,3 +67,24 @@ nav a:active{
 
 
 /* END Navbar & Header */
+
+
+
+
+/* START Footer */
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "IBM Plex Mono", "Montserrat", "Helvetica", sans-serif;
+  height: 12em;
+  background-color: var(--timber-color);
+}
+.socials-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* END Footer */
