@@ -37,7 +37,7 @@ ol {
 /* END CSS Custom Properties */
 
 
-/* START Navbar & Header */
+/* 2. START Navbar & Header */
 nav{
   display: flex;
   align-items: center;
@@ -67,6 +67,7 @@ nav a:active{
 }
 /* END Navbar & Header */
 
+
 /* 3. START of Global styling */
 
 
@@ -75,7 +76,7 @@ nav a:active{
 
 
 
-/* START Footer */
+/* x. START of Footer */
 footer{
   display: flex;
   align-items: center;
@@ -106,4 +107,4 @@ footer{
 .socials-button:active{
   opacity: 0.4;
 }
-/* END Footer */
+/* END of Footer */
