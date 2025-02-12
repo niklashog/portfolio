@@ -69,6 +69,11 @@ nav a:active{
 
 
 /* 3. START of Global styling */
+::selection{
+  color: var(--background-color);
+  background: var(--accent-color);
+}
+
 body, html {
   line-height: 1.5;
   font-size: 1em;
