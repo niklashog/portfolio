@@ -84,6 +84,9 @@ section{
   margin-bottom: 6em;
   width: 100%;
 }
+article{
+  max-width: 600px;
+}
 /* END of Global styling */
 
 
