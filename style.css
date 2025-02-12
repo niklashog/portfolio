@@ -131,24 +131,49 @@ a:active{
 .project-card{
   display: flex;
   flex-direction: column;
-  margin: 2em;
-  width: 8em;
-  height: 14em;
+  margin: 1em;
+  width: 10.5em;
+  height: 18em;
   background-color: var(--background-color);
-  border-top: 2px solid var(--toupe-color);
+  /* border-top: 2px solid var(--toupe-color);
   border-left: 2px solid var(--toupe-color);
   border-right: 2px solid var(--toupe-color);
-  border-bottom: 2px solid var(--toupe-color);
+  border-bottom: 2px solid var(--toupe-color); */
+  border: 1px solid var(--toupe-color);
   border-radius: 10px;
   padding: 1em;
 }
-.project-icon-container{
-  width: 2em;
-  height: 2em;
+.project-card:hover{
+  background-color: rgb(218, 165, 191);
+  color: rgb(67, 29, 67);
+  border-bottom: 2px solid;
+  border-right: 2px solid;
 }
-.fa-solid{
+.project-card:active{
+  background-color: rgb(218, 165, 191);
+  color: rgb(67, 29, 67);
+  border-top: 2px solid;
+  border-left: 2px solid;
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+}
+.project-icon-container{
+  height: 35%;
   font-size: 1.5em;
 }
+
+.project-card-header{
+  font-family: Alegreya, Cochin, Cambria, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+.project-card-body{
+  font-size: 0.8em;
+}
+
+
+
 /* END of Project Cards */
 
 
