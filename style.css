@@ -122,6 +122,27 @@ a:active{
 /* END of Global styling */
 
 
+/* START of Project Cards */
+.project-card-container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.project-card{
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+  width: 8em;
+  height: 14em;
+  background-color: var(--background-color);
+  border-top: 2px solid var(--toupe-color);
+  border-left: 2px solid var(--toupe-color);
+  border-right: 2px solid var(--toupe-color);
+  border-bottom: 2px solid var(--toupe-color);
+  border-radius: 10px;
+  padding: 1em;
+}
+/* END of Project Cards */
 
 
 /* x. START of Footer */
