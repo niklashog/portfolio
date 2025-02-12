@@ -75,7 +75,8 @@ body, html {
   color: var(--primary-color);
   background: var(--background-color);
   font-family: "IBM Plex Mono", "Helvetica", sans-serif;
-
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 main{
