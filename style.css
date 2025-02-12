@@ -142,6 +142,13 @@ a:active{
   border-radius: 10px;
   padding: 1em;
 }
+.project-icon-container{
+  width: 2em;
+  height: 2em;
+}
+.fa-solid{
+  font-size: 1.5em;
+}
 /* END of Project Cards */
 
 
