@@ -111,6 +111,14 @@ a{
   text-decoration: none;
   transition: transform 0.1s, background-color 0.2s ease; 
 }
+a:hover{
+  text-decoration: underline;
+  text-decoration-color: var(--accent-color);
+  text-underline-offset: 0.4em;
+}
+a:active{
+  opacity: 0.6;
+}
 /* END of Global styling */
 
 
