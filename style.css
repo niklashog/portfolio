@@ -97,10 +97,11 @@ section{
   justify-content: center;
   scroll-margin-top: 10em;
   margin-bottom: 6em;
-  width: 100%;
+  width: 80%;
+  max-width: 1200px;
 }
 article{
-  max-width: 600px;
+  width: 100%;
 }
 h2, h3{
   font-family: 'Alegreya', 'Vollkorn', Cochin, Cambria, Georgia, Times, 'Times New Roman', serif;
@@ -119,7 +120,29 @@ a:hover{
 a:active{
   opacity: 0.6;
 }
+
+
+.vertical-split{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 1em;
+}
+.vertical-left{
+
+}
+.vertical-left-big{
+  width: 600px;
+}
+.vertical-right{
+
+}
+.vertical-right-big{
+  width: 600px;
+}
 /* END of Global styling */
+
 
 
 /* START of Project Cards */
