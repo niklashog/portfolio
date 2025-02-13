@@ -155,6 +155,40 @@ a:active{
   z-index: 0;
   margin-bottom: 20em;
 }
+.hero-top{
+  height: 55%;
+  display: flex;
+  flex-flow: wrap row;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  z-index: 2;
+}
+
+.rotate-10-pos {
+  --rotation: 10deg;
+}
+
+.rotate-10-neg {
+  --rotation: -10deg;
+}
+
+.rotate-22-pos {
+  --rotation: 22deg;
+}
+
+.rotate-22-neg {
+  --rotation: -22deg;
+}
+.background-on-accent{
+  color: var(--background-color);
+  background-color:var(--accent-color);
+}
+.primary-on-timber{
+  color: var(--primary-color);
+  background-color: var(--timber-color);
+}
+
 
 
 /* END of Hero section */
