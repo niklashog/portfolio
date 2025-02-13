@@ -6,6 +6,7 @@
 1. CSS Custom Properties
 2. Navbar & Header
 3. Global styling
+4. Hero section
 x. Footer
 
 Table of Contents */
@@ -29,6 +30,7 @@ ol {
 /* 1. START CSS Custom Properties */
 :root{
   --primary-color: rgb(50, 45, 57);
+  --primary-color-faded: rgb(105, 102, 109);
   --toupe-color: rgb(139, 135, 143);
   --timber-color: rgb(211, 208, 203);
   --accent-color: rgb(133, 112, 171);
@@ -74,6 +76,23 @@ nav a:active{
   background: var(--accent-color);
 }
 
+a{
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: transform 0.1s, background-color 0.2s ease; 
+}
+a:hover{
+  text-decoration: underline;
+  text-decoration-color: var(--accent-color);
+  text-underline-offset: 0.4em;
+}
+a:active{
+  opacity: 0.6;
+}
+h2, h3{
+  font-family: 'Alegreya', 'Vollkorn', Cochin, Cambria, Georgia, Times, 'Times New Roman', serif;
+}
+
 body, html {
   line-height: 1.5;
   font-size: 1em;
@@ -91,6 +110,7 @@ main{
   flex-direction: column;
 }
 
+/* THIS NEEDS TO BE width 100%, or wrapper*/
 section{
   display: flex;
   flex-direction: row;
@@ -103,24 +123,6 @@ section{
 article{
   width: 100%;
 }
-h2, h3{
-  font-family: 'Alegreya', 'Vollkorn', Cochin, Cambria, Georgia, Times, 'Times New Roman', serif;
-}
-
-a{
-  color: var(--accent-color);
-  text-decoration: none;
-  transition: transform 0.1s, background-color 0.2s ease; 
-}
-a:hover{
-  text-decoration: underline;
-  text-decoration-color: var(--accent-color);
-  text-underline-offset: 0.4em;
-}
-a:active{
-  opacity: 0.6;
-}
-
 
 .vertical-split{
   display: flex;
@@ -141,6 +143,112 @@ a:active{
   width: 600px;
 }
 /* END of Global styling */
+
+/* START of Hero section */
+#hero{
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-flow: wrap column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 20em;
+}
+#hero::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/bg_Gemini_Generated_Image_dshrlkdshrlkdshr.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.07;
+  z-index: -1;
+  pointer-events: none;
+}
+  .hero-top{
+    height: 55%;
+    display: flex;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    z-index: 2;
+  }
+
+  /* Top Left*/
+    .hero-cards-container{
+      display: flex;
+      flex-flow: row wrap;
+      align-content: center;
+      justify-content: center;
+      font-weight: bold;
+      width: 13em;
+      height: 20em;
+      font-size: 1.5em;
+    }
+    .hero-cards-container span {
+      font-family: "Vollkorn", "Cabin", "IBM Plex Sans", "Inconsolata", "Inter", "Inter Tight", "Aleo", "Rubik", "Alegreya", "Montserrat", serif;
+      display: inline-block;
+      padding: 0.5em 1.1em;
+    }
+
+    .rotate-10-pos {
+      --rotation: 10deg;
+    }
+    .rotate-10-neg {
+      --rotation: -10deg;
+    }
+    .rotate-22-pos {
+      --rotation: 22deg;
+    }
+    .rotate-22-neg {
+      --rotation: -22deg;
+    }
+    .background-on-accent{
+      color: var(--background-color);
+      background-color:var(--accent-color);
+    }
+    .primary-on-timber{
+      color: var(--primary-color);
+      background-color: var(--timber-color);
+    }
+
+  /* Top Right*/
+  .hero-right{
+    display:flex;
+    flex-flow: wrap column;
+  }
+    .my-name-container{
+      color: var(--primary-color);
+      width: 22em;
+      margin-left: 2em;
+      opacity: 1;
+    }
+    .my-name{
+      font-family: "Alegreya", "Franklin Gothic Medium", serif;
+      font-size: 5em;
+      line-height: 1.2em;
+      letter-spacing: -2px;
+    }
+    .hero-subheader{
+      color: var(--primary-color-faded);
+      margin-top: 2em;
+      margin-left: 2em;
+      width: 22em;
+    }
+
+    /* Bottom */
+
+
+
+
+/* END of Hero section */
+
 
 /* START of About Me */
 #about-me-left{
