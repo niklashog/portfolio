@@ -190,6 +190,11 @@ article{
       height: 20em;
       font-size: 1.5em;
     }
+    .hero-cards-container span {
+      font-family: "Vollkorn", "Cabin", "IBM Plex Sans", "Inconsolata", "Inter", "Inter Tight", "Aleo", "Rubik", "Alegreya", "Montserrat", serif;
+      display: inline-block;
+      padding: 0.5em 1.1em;
+    }
 
     .rotate-10-pos {
       --rotation: 10deg;
