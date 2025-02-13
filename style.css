@@ -76,6 +76,23 @@ nav a:active{
   background: var(--accent-color);
 }
 
+a{
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: transform 0.1s, background-color 0.2s ease; 
+}
+a:hover{
+  text-decoration: underline;
+  text-decoration-color: var(--accent-color);
+  text-underline-offset: 0.4em;
+}
+a:active{
+  opacity: 0.6;
+}
+h2, h3{
+  font-family: 'Alegreya', 'Vollkorn', Cochin, Cambria, Georgia, Times, 'Times New Roman', serif;
+}
+
 body, html {
   line-height: 1.5;
   font-size: 1em;
@@ -105,24 +122,6 @@ section{
 article{
   width: 100%;
 }
-h2, h3{
-  font-family: 'Alegreya', 'Vollkorn', Cochin, Cambria, Georgia, Times, 'Times New Roman', serif;
-}
-
-a{
-  color: var(--accent-color);
-  text-decoration: none;
-  transition: transform 0.1s, background-color 0.2s ease; 
-}
-a:hover{
-  text-decoration: underline;
-  text-decoration-color: var(--accent-color);
-  text-underline-offset: 0.4em;
-}
-a:active{
-  opacity: 0.6;
-}
-
 
 .vertical-split{
   display: flex;
