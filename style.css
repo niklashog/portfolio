@@ -110,6 +110,7 @@ main{
   flex-direction: column;
 }
 
+/* THIS NEEDS TO BE width 100%, or wrapper*/
 section{
   display: flex;
   flex-direction: row;
