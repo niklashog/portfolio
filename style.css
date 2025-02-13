@@ -30,6 +30,7 @@ ol {
 /* 1. START CSS Custom Properties */
 :root{
   --primary-color: rgb(50, 45, 57);
+  --primary-color-faded: rgb(105, 102, 109);
   --toupe-color: rgb(139, 135, 143);
   --timber-color: rgb(211, 208, 203);
   --accent-color: rgb(133, 112, 171);
@@ -163,6 +164,38 @@ a:active{
   justify-content: center;
   opacity: 1;
   z-index: 2;
+}
+.hero-right{
+  display:flex;
+  flex-flow: wrap column;
+}
+.my-name-container{
+  color: var(--primary-color);
+  width: 22em;
+  margin-left: 2em;
+  opacity: 1;
+}
+.my-name{
+  font-family: "Alegreya", "Franklin Gothic Medium", serif;
+  font-size: 5em;
+  line-height: 1.2em;
+  letter-spacing: -2px;
+}
+.hero-subheader{
+  color: var(--primary-color-faded);
+  margin-top: 2em;
+  margin-left: 2em;
+  width: 22em;
+}
+.hero-content-container{
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: center;
+  font-weight: bold;
+  width: 13em;
+  height: 20em;
+  font-size: 1.5em;
 }
 
 .rotate-10-pos {
