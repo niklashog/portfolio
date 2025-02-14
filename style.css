@@ -152,8 +152,8 @@ section{
   justify-content: center;
   scroll-margin-top: 10em;
   margin-bottom: 6em;
-  width: 80%;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1920px;
 }
 article{
   width: 100%;
