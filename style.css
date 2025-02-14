@@ -176,6 +176,15 @@ article{
 .vertical-right-big{
   width: 600px;
 }
+
+.linebreak{
+  height: 1px;
+  background-color: var(--accent-color);
+  width: 12em;
+  margin-top: 0.2em;
+  margin-bottom: 1em;
+}
+
 /* END of Global styling */
 
 /* START of Hero section */
