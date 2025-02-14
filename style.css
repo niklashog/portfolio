@@ -35,6 +35,11 @@ ol {
   --timber-color: rgb(211, 208, 203);
   --accent-color: rgb(133, 112, 171);
   --background-color: rgb(236, 235, 230);
+  --body-font: 'IBM Plex Mono', Helvetica, sans-serif;
+  --headers-font: Alegreya, Cochin, Cambria, Georgia, Times, 'Times New Roman', serif;
+  --hero-cards-font: Vollkorn, Alegreya, serif;
+
+
 }
 /* END CSS Custom Properties */
 
@@ -56,7 +61,7 @@ nav ul{
 }
 nav ul a{
   font-size: 1.4em;
-  font-family: 'Alegreya', Cochin, Cambria, Georgia, Times, 'Times New Roman', serif;
+  font-family: var(--headers-font);
   color: var(--primary-color);
   padding: 0em 0.5em;
   text-decoration: none;
@@ -90,7 +95,7 @@ a:active{
   opacity: 0.6;
 }
 h2, h3{
-  font-family: 'Alegreya', 'Vollkorn', Cochin, Cambria, Georgia, Times, 'Times New Roman', serif;
+  font-family: var(--headers-font);
 }
 
 body, html {
@@ -98,7 +103,7 @@ body, html {
   font-size: 1em;
   color: var(--primary-color);
   background: var(--background-color);
-  font-family: "IBM Plex Mono", "Helvetica", sans-serif;
+  font-family: var(--body-font);
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -192,7 +197,7 @@ article{
       font-size: 1.5em;
     }
     .hero-cards-container span {
-      font-family: "Vollkorn", "Cabin", "IBM Plex Sans", "Inconsolata", "Inter", "Inter Tight", "Aleo", "Rubik", "Alegreya", "Montserrat", serif;
+      font-family: var(--hero-cards-font);
       display: inline-block;
       padding: 0.5em 1.1em;
     }
@@ -230,7 +235,7 @@ article{
       opacity: 1;
     }
     .my-name{
-      font-family: "Alegreya", "Franklin Gothic Medium", serif;
+      font-family: var(--headers-font);
       font-size: 5em;
       line-height: 1.2em;
       letter-spacing: -2px;
@@ -270,8 +275,12 @@ article{
 /* END of About Me */
 
 .clip-path{
-  clip-path: polygon(40% 2%, 46% 1%, 55% 2%, 63% 2%, 69% 3%, 75% 5%, 84% 8%, 86% 9%, 82% 12%, 93% 15%, 90% 18%, 95% 24%, 96% 26%, 97% 28%, 94% 30%, 94% 33%, 96% 38%, 96% 40%, 95% 45%, 97% 48%, 99% 50%, 97% 56%, 97% 62%, 95% 64%, 96% 68%, 92% 71%, 95% 75%, 92% 79%, 93% 84%, 84% 86%, 85% 91%, 76% 95%, 68% 97%, 60% 100%, 51% 98%, 42% 97%, 33% 93%, 26% 91%, 23% 84%, 19% 80%, 20% 75%, 20% 70%, 16% 64%, 19% 59%, 14% 55%, 14% 50%, 9% 46%, 14% 40%, 8% 36%, 12% 31%, 8% 27%, 10% 22%, 8% 18%, 12% 13%, 11% 6%, 22% 4%, 30% 1%);
+  clip-path: polygon(12% 4%, 98% 2%, 94% 85%, 12% 88%);
 }
+
+/* .clip-path{
+  clip-path: polygon(40% 2%, 46% 1%, 55% 2%, 63% 2%, 69% 3%, 75% 5%, 84% 8%, 86% 9%, 82% 12%, 93% 15%, 90% 18%, 95% 24%, 96% 26%, 97% 28%, 94% 30%, 94% 33%, 96% 38%, 96% 40%, 95% 45%, 97% 48%, 99% 50%, 97% 56%, 97% 62%, 95% 64%, 96% 68%, 92% 71%, 95% 75%, 92% 79%, 93% 84%, 84% 86%, 85% 91%, 76% 95%, 68% 97%, 60% 100%, 51% 98%, 42% 97%, 33% 93%, 26% 91%, 23% 84%, 19% 80%, 20% 75%, 20% 70%, 16% 64%, 19% 59%, 14% 55%, 14% 50%, 9% 46%, 14% 40%, 8% 36%, 12% 31%, 8% 27%, 10% 22%, 8% 18%, 12% 13%, 11% 6%, 22% 4%, 30% 1%);
+} */
 
 /* START of Project Cards */
 .project-card-container{
@@ -307,7 +316,7 @@ article{
 }
 
 .project-card-header{
-  font-family: Alegreya, Cochin, Cambria, Georgia, Times, 'Times New Roman', serif;
+  font-family: var(--headers-font);
   font-size: 1.1em;
   font-weight: 500;
   margin-bottom: 1em;
@@ -327,7 +336,7 @@ footer{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-family: "IBM Plex Mono", "Montserrat", "Helvetica", sans-serif;
+  font-family: var(--body-font);
   height: 12em;
   background-color: var(--timber-color);
 }
