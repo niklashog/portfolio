@@ -1,6 +1,6 @@
-# Project Title
+# Web portfolio
 
-Simple overview of use/purpose.
+Creating my very first web portfolio. The first project in html, css and javascript that I have attempted.
 
 ## Description
 
