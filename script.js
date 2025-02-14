@@ -52,3 +52,14 @@ document.querySelectorAll("#navbar a, .hero-bottom a").forEach(link => {
 window.addEventListener("scroll", onScrollThrottled, { passive: true });
 
 // END Navbar with conditional autohide
+
+
+// START Ramlande kort i hero
+document.addEventListener("DOMContentLoaded", () => {
+  const spans = document.querySelectorAll(".hero-cards-container span");
+  spans.forEach((span, index) => {
+    span.style.animationDelay = `${index * 0.12}s`;
+  });
+});
+
+// END Ramlande kort i hero
