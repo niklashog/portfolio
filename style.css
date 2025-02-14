@@ -72,6 +72,15 @@ nav a:hover{
 nav a:active{
   opacity: 0.6;
 }
+
+#navbar {
+  box-sizing: border-box;
+  z-index: 1000;
+  position: fixed;
+  opacity: 1;
+  transform: translateY(0);
+  transition: top 0.3s ease, opacity 0.3s ease;
+}
 /* END Navbar & Header */
 
 
