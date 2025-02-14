@@ -66,12 +66,42 @@ nav ul a{
   padding: 0em 0.5em;
   text-decoration: none;
 }
-nav a:hover{
-  text-decoration: underline;
-}
-nav a:active{
-  opacity: 0.6;
-}
+
+    /* START Länkar i navbar. Kopplat till JS-styling */
+    #navbar a {
+      position: relative;
+      text-decoration: none;
+    }
+
+    #navbar a::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -0.5em;
+      width: 40px;
+      height: 2px;
+      background-color: currentColor;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+    #navbar a:hover::after {
+      opacity: 1;
+    }
+    /* END Länkar i navbar. Kopplat till JS-styling */
+
+
+    /* START Navbar. Kopplat till JS-styling. */
+    #navbar {
+      box-sizing: border-box;
+      z-index: 1000;
+      position: fixed;
+      opacity: 1;
+      transform: translateY(0);
+      transition: top 0.3s ease, opacity 0.3s ease;
+    }
+    /* END Navbar. Kopplat till JS-styling. */
+
 /* END Navbar & Header */
 
 
