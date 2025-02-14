@@ -182,7 +182,7 @@ article{
 /* START of Hero section */
 #hero{
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-flow: wrap column;
   align-items: center;
