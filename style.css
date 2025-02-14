@@ -90,6 +90,18 @@ nav ul a{
     }
     /* END Länkar i navbar. Kopplat till JS-styling */
 
+
+    /* START Navbar. Kopplat till JS-styling. */
+    #navbar {
+      box-sizing: border-box;
+      z-index: 1000;
+      position: fixed;
+      opacity: 1;
+      transform: translateY(0);
+      transition: top 0.3s ease, opacity 0.3s ease;
+    }
+    /* END Navbar. Kopplat till JS-styling. */
+
 /* END Navbar & Header */
 
 
