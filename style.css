@@ -7,6 +7,7 @@
 2. Navbar & Header
 3. Global styling
 4. Hero section
+5. About me
 x. Footer
 
 Table of Contents */
@@ -187,7 +188,7 @@ article{
 
 /* END of Global styling */
 
-/* START of Hero section */
+/* 4. START of Hero section */
 #hero{
   width: 100vw;
   height: 100vh;
@@ -306,7 +307,7 @@ article{
 /* END of Hero section */
 
 
-/* START of About Me */
+/* 5. START of About Me */
 #about-me-left{
 }
 #about-me-right{
