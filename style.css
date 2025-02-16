@@ -438,25 +438,7 @@ article{
 /* END of Projects */
 
 /* 8. START of Contact */
-#contact-left{
-  width: 220px;
-  height: 350px;
-  /* background-position-x: center;
-  background-size: cover;
-  background-image: url('niklas-edited-vintage.jpg');
-  transform: scaleX(-1);
-  background-color: var(--background-color);
-  border: 1px solid var(--primary-color);
-  border-radius: 20px; */
-  margin-right: 2em;
-}
 
-.clip-path{
-  clip-path: polygon(12% 4%, 98% 2%, 94% 85%, 12% 88%);
-}
-
-#contact-right{
-}
 
 /* END of Contact */
 
