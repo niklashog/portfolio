@@ -446,6 +446,15 @@ ul li::marker{
 .formular-body{
   margin-bottom: 1em;
 }
+
+.contact-options {
+  padding-left: 1em;
+  list-style: disc;
+}
+.contact-options li {
+  padding-bottom: 0.5em;
+}
+
 /* END of Contact */
 
 
