@@ -258,6 +258,47 @@
               <li><a href="tel:+46705188735">+4670 518 87 35</a></li>
             </ul>
 
+            <div class="formular-container">
+              <form action="https://http-echo-server.azurewebsites.net" method="post">
+            
+                  <div class="formular-top">
+            
+                    <div class="formular-top-left">
+                      <div>
+                        <span class="formular-label">
+                          <label for="fullname">Namn</label></span>
+                        <span>
+                          <input class="text-input" type="text" id="fullname" name="fullname" placeholder="Ditt namn *" required>
+                        </span>
+                      </div>
+                    </div>
+                    
+                    <div class="formular-top-right">
+                      <div>
+                        <span class="formular-label">
+                          <label for="email">Epost</label></span>
+                        <span>
+                          <input class="text-input" type="email" id="email" name="email" placeholder="Din epost-adress *" required>
+                        </span>
+                      </div>
+                    </div>
+            
+                  </div>
+            
+                <div class="formular-bot">
+            
+                  <div>
+                    <textarea class="textarea" name="message" placeholder="Ditt meddelande här.."></textarea>
+                  </div>
+            
+                  <button class="submit-button" type="submit">Skicka</button>
+                  <div class="obligatory">* Fältet är obligatoriskt</div>
+                  
+                </div>
+            
+              </form>
+            </div>
+
           </div>
 
         </div>
