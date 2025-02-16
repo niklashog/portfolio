@@ -162,6 +162,10 @@ article{
   width: 100%;
 }
 
+ul li::marker{
+  color: var(--accent-color);
+}
+
 .no-split{
   display: flex;
   flex-flow: row wrap;
