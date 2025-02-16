@@ -439,7 +439,9 @@ article{
 
 /* 8. START of Contact */
 
-
+.formular-body{
+  margin-bottom: 1em;
+}
 /* END of Contact */
 
 
