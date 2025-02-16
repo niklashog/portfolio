@@ -8,6 +8,9 @@
 3. Global styling
 4. Hero section
 5. About me
+6. Skills / Knowledge
+7. Projects
+8. Contact
 x. Footer
 
 Table of Contents */
@@ -157,6 +160,17 @@ section{
 }
 article{
   width: 100%;
+}
+
+.no-split{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 1em;
+}
+.centered-content{
+  width: 852px;
 }
 
 .vertical-split{
@@ -309,10 +323,6 @@ article{
 
 /* 5. START of About Me */
 #about-me-left{
-}
-#about-me-right{
-}
-#my-picture-container{
   width: 220px;
   height: 350px;
   background-position-x: center;
@@ -324,62 +334,131 @@ article{
   border-radius: 20px;
   margin-right: 2em;
 }
-/* END of About Me */
 
 .clip-path{
   clip-path: polygon(12% 4%, 98% 2%, 94% 85%, 12% 88%);
 }
 
-/* .clip-path{
-  clip-path: polygon(40% 2%, 46% 1%, 55% 2%, 63% 2%, 69% 3%, 75% 5%, 84% 8%, 86% 9%, 82% 12%, 93% 15%, 90% 18%, 95% 24%, 96% 26%, 97% 28%, 94% 30%, 94% 33%, 96% 38%, 96% 40%, 95% 45%, 97% 48%, 99% 50%, 97% 56%, 97% 62%, 95% 64%, 96% 68%, 92% 71%, 95% 75%, 92% 79%, 93% 84%, 84% 86%, 85% 91%, 76% 95%, 68% 97%, 60% 100%, 51% 98%, 42% 97%, 33% 93%, 26% 91%, 23% 84%, 19% 80%, 20% 75%, 20% 70%, 16% 64%, 19% 59%, 14% 55%, 14% 50%, 9% 46%, 14% 40%, 8% 36%, 12% 31%, 8% 27%, 10% 22%, 8% 18%, 12% 13%, 11% 6%, 22% 4%, 30% 1%);
-} */
-
-/* START of Project Cards */
-.project-card-container{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+#about-me-right{
 }
-.project-card{
+
+/* END of About Me */
+
+/* 6. START of Skills section */
+#skills-right{
+  width: 220px;
+  height: 350px;
+  /* background-position-x: center;
+  background-size: cover;
+  background-image: url('niklas-edited-vintage.jpg');
+  transform: scaleX(-1);
+  background-color: var(--background-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 20px; */
+  margin-left: 2em;
+}
+
+#skills-left{
   display: flex;
   flex-direction: column;
-  margin: 1em;
-  width: 10.5em;
-  height: 18em;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.icon{
+  width: 75px;
+  height: 75px;
+}
+
+/* END of Skills section */
+
+/* 7. START of Projects */
+#project-left{
+  width: 220px;
+  height: 350px;
+  /* background-position-x: center;
+  background-size: cover;
+  background-image: url('niklas-edited-vintage.jpg');
+  transform: scaleX(-1);
   background-color: var(--background-color);
-  border: 1px solid var(--toupe-color);
-  border-radius: 10px;
-  padding: 1em;
-}
-.project-card:hover{
-  background-color: rgb(218, 165, 191);
-  color: rgb(67, 29, 67);
-  border-bottom: 2px solid;
-  border-right: 2px solid;
-}
-.project-card:active{
-  opacity: 0.95;
-  background-color: rgb(218, 165, 191);
-  color: rgb(67, 29, 67);
-}
-.project-icon-container{
-  height: 35%;
-  font-size: 1.5em;
-}
-
-.project-card-header{
-  font-family: var(--headers-font);
-  font-size: 1.1em;
-  font-weight: 500;
-  margin-bottom: 1em;
-}
-.project-card-body{
-  font-size: 0.8em;
+  border: 1px solid var(--primary-color);
+  border-radius: 20px; */
+  margin-right: 2em;
 }
 
 
+#project-right{
+}
 
-/* END of Project Cards */
+    /* START of Project Cards */
+    .project-card-container{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+    .project-card{
+      display: flex;
+      flex-direction: column;
+      margin: 1em;
+      width: 10.5em;
+      height: 18em;
+      background-color: var(--background-color);
+      border: 1px solid var(--toupe-color);
+      border-radius: 10px;
+      padding: 1em;
+    }
+    .project-card:hover{
+      background-color: rgb(218, 165, 191);
+      color: rgb(67, 29, 67);
+      border-bottom: 2px solid;
+      border-right: 2px solid;
+    }
+    .project-card:active{
+      opacity: 0.95;
+      background-color: rgb(218, 165, 191);
+      color: rgb(67, 29, 67);
+    }
+    .project-icon-container{
+      height: 35%;
+      font-size: 1.5em;
+    }
+
+    .project-card-header{
+      font-family: var(--headers-font);
+      font-size: 1.1em;
+      font-weight: 500;
+      margin-bottom: 1em;
+    }
+    .project-card-body{
+      font-size: 0.8em;
+    }
+    /* END of Project Cards */
+
+
+/* END of Projects */
+
+/* 8. START of Contact */
+#contact-left{
+  width: 220px;
+  height: 350px;
+  /* background-position-x: center;
+  background-size: cover;
+  background-image: url('niklas-edited-vintage.jpg');
+  transform: scaleX(-1);
+  background-color: var(--background-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 20px; */
+  margin-right: 2em;
+}
+
+.clip-path{
+  clip-path: polygon(12% 4%, 98% 2%, 94% 85%, 12% 88%);
+}
+
+#contact-right{
+}
+
+/* END of Contact */
 
 
 /* x. START of Footer */
