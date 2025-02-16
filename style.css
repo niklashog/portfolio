@@ -442,11 +442,9 @@ ul li::marker{
 /* END of Projects */
 
 /* 8. START of Contact */
-
 .formular-body{
   margin-bottom: 1em;
 }
-
 .contact-options {
   padding-left: 1em;
   list-style: disc;
@@ -455,6 +453,56 @@ ul li::marker{
   padding-bottom: 0.5em;
 }
 
+form{
+  text-align: left;
+  margin-top: 1.2em;
+}
+
+input,
+textarea{
+  border: 1px var(--primary-color) solid;
+  border-radius: 5px;
+  padding: 0.6em;
+  margin-bottom: 1.6em;
+}
+.textarea{
+  resize: vertical;
+  font-size: 0.9em;
+  font-family: "IBM Plex Mono", "Helvetica", sans-serif;
+  width: 57.3%;
+  max-width: 100%;
+  min-height: 10em;
+  border-radius: 10x;
+}
+
+
+.formular-container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column wrap;
+}
+.formular-top{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+.formular-top-left{
+  width: 30%;
+}
+.formular-top-right{
+  width: 30%;
+}
+
+
+
+
+
+.obligatory{
+  margin-top: 2em;
+  font-size: 0.8em;
+}
 /* END of Contact */
 
 
