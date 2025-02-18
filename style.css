@@ -40,6 +40,7 @@ ol {
   --accent-color: rgb(133, 112, 171);
   --background-color: rgb(236, 235, 230);
   --formular-background-color: whitesmoke;
+  --formular-background-color-active: white;
   --body-font: 'IBM Plex Mono', Helvetica, sans-serif;
   --headers-font: Alegreya, Cochin, Cambria, Georgia, Times, 'Times New Roman', serif;
   --hero-cards-font: Vollkorn, Alegreya, serif;
@@ -455,11 +456,18 @@ textarea{
   color: var(--primary-color);
   font-family: "IBM Plex Mono", "Helvetica", sans-serif;
   border: 1px var(--primary-color) solid;
-  background-color: whitesmoke;;
+  background-color: var(--formular-background-color);
   padding: 0.6em;
   border-radius: 10px;
-  border-bottom: 2px solid var(--primary-color);
   margin-bottom: 1.6em;
+}
+
+input:focus,
+textarea:focus{
+  outline: transparent;
+  background-color: var(--formular-background-color-active);
+  border-bottom: 2px solid var(--primary-color);
+  border-right: 2px solid var(--primary-color);
 }
 
 .formular-container{
@@ -484,11 +492,6 @@ textarea{
     .text-input{
       width: 100%;
     }
-    .text-input:focus {
-      outline: transparent;
-      background-color: whitesmoke;
-    }
-
 
 .textarea{
   resize: vertical;
@@ -496,10 +499,6 @@ textarea{
   max-width: 100%;
   min-height: 10em;
 }
-    .textarea:focus {
-      outline: transparent;
-      background-color: whitesmoke;
-    }
 
 .obligatory{
   margin-top: 2em;
