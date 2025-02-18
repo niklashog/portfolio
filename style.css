@@ -159,10 +159,10 @@ section{
   scroll-margin-top: 10em;
   margin-bottom: 6em;
   width: 100%;
-  max-width: 1920px;
 }
 article{
   width: 100%;
+  max-width: 1920px;
 }
 
 ul li::marker{
