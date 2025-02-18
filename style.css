@@ -43,7 +43,7 @@ ol {
   --background-color: rgb(236, 235, 230);
   --hero-city-color: rgb(222, 221, 217);
   --formular-background-color: whitesmoke;
-  --formular-background-color-active: white;
+  --formular-active-color: white;
   --body-font: 'IBM Plex Mono', Helvetica, sans-serif;
   --headers-font: Alegreya, Cochin, Cambria, Georgia, Times, 'Times New Roman', serif;
   --hero-cards-font: Vollkorn, Alegreya, serif;
