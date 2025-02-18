@@ -544,6 +544,9 @@ footer{
   background-color: var(--background-color);
   cursor: pointer;
 }
+.submit-button:active{
+  opacity: 0.8;
+}
 
 .socials-button,
 .socials-button:visited{
