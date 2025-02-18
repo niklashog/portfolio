@@ -219,7 +219,7 @@ ul li::marker{
   justify-content: center;
   position: relative;
   z-index: 0;
-  margin-bottom: 20em;
+  margin-bottom: 10em;
 }
 #hero::after{
   content: '';
