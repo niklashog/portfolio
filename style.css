@@ -465,22 +465,6 @@ textarea{
   padding: 0.6em;
   margin-bottom: 1.6em;
 }
-.textarea{
-  resize: vertical;
-  font-size: 0.9em;
-  font-family: "IBM Plex Mono", "Helvetica", sans-serif;
-  color: var(--primary-color);
-  background-color: var(--background-color);
-  width: 57.3%;
-  max-width: 100%;
-  min-height: 10em;
-  border-bottom: 2px solid var(--primary-color);
-  border-radius: 10x;
-}
-    .textarea:focus {
-      outline: transparent;
-      background-color: whitesmoke;
-    }
 
 .formular-container{
   display: flex;
@@ -488,17 +472,18 @@ textarea{
   width: 100%;
   height: auto;
 }
+
 .formular-top{
-  width: 100%;
+  width: 60%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start; /* Vill kunna köra space between för bättre mobilanpassning */
-    }
+  justify-content: space-between; /* Vill kunna köra space between för bättre mobilanpassning */
+}
     .formular-top-left{
-      width: 30%;
+      width: 38%;
     }
     .formular-top-right{
-      width: 30%;
+      width: 57%;
     }
 
     .text-input{
@@ -516,7 +501,22 @@ textarea{
     }
 
 
-
+.textarea{
+  resize: vertical;
+  font-size: 0.9em;
+  font-family: "IBM Plex Mono", "Helvetica", sans-serif;
+  color: var(--primary-color);
+  background-color: var(--background-color);
+  width: 60%;
+  max-width: 100%;
+  min-height: 10em;
+  border-bottom: 2px solid var(--primary-color);
+  border-radius: 10x;
+}
+    .textarea:focus {
+      outline: transparent;
+      background-color: whitesmoke;
+    }
 
 .obligatory{
   margin-top: 2em;
