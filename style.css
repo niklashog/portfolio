@@ -506,7 +506,7 @@ textarea{
     }
     .text-input:focus {
       outline: transparent;
-      background-color: white;
+      background-color: whitesmoke;
     }
 
 
