@@ -511,13 +511,33 @@ textarea:focus{
 
 
 /* w. START of Changing Backgrounds */
+.shape-divider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
 
+.shape-divider svg {
+  position: relative;
+  display: block;
+  width: calc(188% + 1.3px);
+  height: 45px;
+  transform: rotateY(180deg);
+}
+
+.shape-divider .shape-fill {
+  fill: #ECEBE6;
+}
 
 #skills,
 #skills-top{
-  background-color: var(--building-color);
+  background-color: var(--hero-city-color);
 }
 #skills-top{
+  position:relative;
   width: 100%;
   height: 10em;
 }
@@ -533,7 +553,7 @@ textarea:focus{
 
 #contact,
 #contact-top{
-
+  background-color: var(--hero-city-color);
 }
 #contact-top{
   height: 10em;
