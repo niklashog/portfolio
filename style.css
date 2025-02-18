@@ -469,9 +469,12 @@ textarea{
   resize: vertical;
   font-size: 0.9em;
   font-family: "IBM Plex Mono", "Helvetica", sans-serif;
+  color: var(--primary-color);
+  background-color: var(--background-color);
   width: 57.3%;
   max-width: 100%;
   min-height: 10em;
+  border-bottom: 2px solid var(--primary-color);
   border-radius: 10x;
 }
 
