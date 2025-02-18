@@ -12,6 +12,7 @@
 7. Projects
 8. Contact
 x. Footer
+y. Buttons
 
 Table of Contents */
 
@@ -523,6 +524,30 @@ footer{
   justify-content: center;
   align-items: center;
 }
+/* x. END of Footer */
+
+
+/* START of Buttons */
+.submit-button{
+  border: 2px var(--accent-color) solid;
+  font-weight: 600;
+  color: var(--background-color);
+  background-color: var(--accent-color);
+  border-radius: 10px;
+  width: 8em;
+  height: 2.5em;
+  padding: 5px;
+  font-size: 0.9em;
+}
+.submit-button:hover{
+  color: var(--accent-color);
+  background-color: var(--background-color);
+  cursor: pointer;
+}
+.submit-button:active{
+  opacity: 0.8;
+}
+
 .socials-button,
 .socials-button:visited{
   width: 45px;
@@ -539,4 +564,4 @@ footer{
 .socials-button:active{
   opacity: 0.4;
 }
-/* END of Footer */
+/* END of Buttons */
