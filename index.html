@@ -250,8 +250,54 @@
           <div class="centered-content">
             <h2>Kontakt</h2>
             <div class="linebreak"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ea error at, reiciendis ut fuga illo, fugit aliquid expedita officia est praesentium tempora quisquam omnis blanditiis, quam neque sit quidem?
-            <p>
+            <p class="formular-body">
+              Oavsett om du har en fråga, ett samarbetsförslag eller bara vill diskutera en idé över en kopp kaffe, är du välkommen att höra av dig! Skicka ett mail endera via formuläret eller med epost-adressen! Du kan ringa också, true story.
+            </p>
+            <ul class="contact-options">
+              <li><a href="mailto:hogstromniklas@gmail.com">hogstromniklas@gmail.com</a></li>
+              <li><a href="tel:+46705188735">+4670 518 87 35</a></li>
+            </ul>
+
+            <div class="formular-container">
+              <form action="https://http-echo-server.azurewebsites.net" method="post">
+            
+                  <div class="formular-top">
+            
+                    <div class="formular-top-left">
+                      <div>
+                        <span class="formular-label">
+                          <label for="fullname">Namn</label></span>
+                        <span>
+                          <input class="text-input" type="text" id="fullname" name="fullname" placeholder="Ditt namn *" required>
+                        </span>
+                      </div>
+                    </div>
+                    
+                    <div class="formular-top-right">
+                      <div>
+                        <span class="formular-label">
+                          <label for="email">Epost</label></span>
+                        <span>
+                          <input class="text-input" type="email" id="email" name="email" placeholder="Din epost-adress *" required>
+                        </span>
+                      </div>
+                    </div>
+            
+                  </div>
+            
+                <div class="formular-bot">
+            
+                  <div>
+                    <textarea class="textarea" name="message" placeholder="Ditt meddelande här.."></textarea>
+                  </div>
+            
+                  <button class="submit-button" type="submit">Skicka</button>
+                  <div class="obligatory">* Fältet är obligatoriskt</div>
+                  
+                </div>
+            
+              </form>
+            </div>
 
           </div>
 

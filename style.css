@@ -39,6 +39,8 @@ ol {
   --timber-color: rgb(211, 208, 203);
   --accent-color: rgb(133, 112, 171);
   --background-color: rgb(236, 235, 230);
+  --formular-background-color: whitesmoke;
+  --formular-background-color-active: white;
   --body-font: 'IBM Plex Mono', Helvetica, sans-serif;
   --headers-font: Alegreya, Cochin, Cambria, Georgia, Times, 'Times New Roman', serif;
   --hero-cards-font: Vollkorn, Alegreya, serif;
@@ -160,6 +162,10 @@ section{
 }
 article{
   width: 100%;
+}
+
+ul li::marker{
+  color: var(--accent-color);
 }
 
 .no-split{
@@ -329,9 +335,6 @@ article{
   background-size: cover;
   background-image: url('niklas-edited-vintage.jpg');
   transform: scaleX(-1);
-  background-color: var(--background-color);
-  border: 1px solid var(--primary-color);
-  border-radius: 20px;
   margin-right: 2em;
 }
 
@@ -348,13 +351,6 @@ article{
 #skills-right{
   width: 220px;
   height: 350px;
-  /* background-position-x: center;
-  background-size: cover;
-  background-image: url('niklas-edited-vintage.jpg');
-  transform: scaleX(-1);
-  background-color: var(--background-color);
-  border: 1px solid var(--primary-color);
-  border-radius: 20px; */
   margin-left: 2em;
 }
 
@@ -438,8 +434,77 @@ article{
 /* END of Projects */
 
 /* 8. START of Contact */
+.formular-body{
+  margin-bottom: 1em;
+}
+.contact-options {
+  padding-left: 1em;
+  list-style: disc;
+}
+.contact-options li {
+  padding-bottom: 0.5em;
+}
 
+form{
+  text-align: left;
+  margin-top: 1.2em;
+}
+input,
+textarea{
+  font-size: 0.9em;
+  color: var(--primary-color);
+  font-family: "IBM Plex Mono", "Helvetica", sans-serif;
+  border: 1px var(--primary-color) solid;
+  background-color: var(--formular-background-color);
+  padding: 0.6em;
+  border-radius: 10px;
+  margin-bottom: 1.6em;
+}
+input:focus,
+textarea:focus{
+  outline: transparent;
+  background-color: var(--formular-background-color-active);
+  border-bottom: 2px solid var(--primary-color);
+  border-right: 2px solid var(--primary-color);
+}
 
+.formular-container{
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  height: auto;
+}
+
+.formular-top{
+  width: 63%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; /* Vill kunna köra space between för bättre mobilanpassning */
+}
+    .formular-top-left{
+      min-width: 190px;
+      width: 40%;
+    }
+    .formular-top-right{
+      min-width: 300px;
+      width: 55%;
+    }
+    .text-input{
+      width: 100%;
+    }
+
+.textarea{
+  resize: vertical;
+  width: 63%;
+  min-width: 300px;
+  max-width: 100%;
+  min-height: 10em;
+}
+
+.obligatory{
+  margin-top: 2em;
+  font-size: 0.8em;
+}
 /* END of Contact */
 
 
