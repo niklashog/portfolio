@@ -528,6 +528,18 @@ footer{
 
 
 /* START of Buttons */
+.submit-button{
+  border: 2px var(--accent-color) solid;
+  font-weight: 600;
+  color: var(--background-color);
+  background-color: var(--accent-color);
+  border-radius: 10px;
+  width: 8em;
+  height: 2.5em;
+  padding: 5px;
+  font-size: 0.9em;
+}
+
 .socials-button,
 .socials-button:visited{
   width: 45px;
