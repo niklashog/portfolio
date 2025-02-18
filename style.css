@@ -11,6 +11,7 @@
 6. Skills / Knowledge
 7. Projects
 8. Contact
+w. Changing backgrounds
 x. Footer
 y. Buttons
 
@@ -40,6 +41,7 @@ ol {
   --timber-color: rgb(211, 208, 203);
   --accent-color: rgb(133, 112, 171);
   --background-color: rgb(236, 235, 230);
+  --building-color: rgb(222, 221, 217);
   --formular-background-color: whitesmoke;
   --formular-background-color-active: white;
   --body-font: 'IBM Plex Mono', Helvetica, sans-serif;
@@ -157,7 +159,6 @@ section{
   flex-direction: row;
   justify-content: center;
   scroll-margin-top: 10em;
-  margin-bottom: 6em;
   width: 100%;
 }
 article{
@@ -220,6 +221,7 @@ ul li::marker{
   position: relative;
   z-index: 0;
   margin-bottom: 10em;
+  pointer-events: none;
 }
 #hero::after{
   content: '';
@@ -233,7 +235,6 @@ ul li::marker{
   background-position: center;
   opacity: 0.07;
   z-index: -1;
-  pointer-events: none;
 }
   .hero-top{
     height: 55%;
@@ -507,6 +508,40 @@ textarea:focus{
   font-size: 0.8em;
 }
 /* END of Contact */
+
+
+/* w. START of Changing Backgrounds */
+
+
+#skills,
+#skills-top{
+  background-color: var(--building-color);
+}
+#skills-top{
+  width: 100%;
+  height: 10em;
+}
+
+#project,
+#project-top{
+
+}
+#project-top{
+  height: 10em;
+  width: 100%;
+}
+
+#contact,
+#contact-top{
+
+}
+#contact-top{
+  height: 10em;
+  width: 100%;
+}
+
+
+/* w. END of Changing Backgrounds */
 
 
 /* x. START of Footer */
