@@ -523,6 +523,10 @@ footer{
   justify-content: center;
   align-items: center;
 }
+/* x. END of Footer */
+
+
+/* START of Buttons */
 .socials-button,
 .socials-button:visited{
   width: 45px;
@@ -539,4 +543,4 @@ footer{
 .socials-button:active{
   opacity: 0.4;
 }
-/* END of Footer */
+/* END of Buttons */
