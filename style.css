@@ -539,6 +539,11 @@ footer{
   padding: 5px;
   font-size: 0.9em;
 }
+.submit-button:hover{
+  color: var(--accent-color);
+  background-color: var(--background-color);
+  cursor: pointer;
+}
 
 .socials-button,
 .socials-button:visited{
