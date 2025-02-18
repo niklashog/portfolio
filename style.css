@@ -39,6 +39,7 @@ ol {
   --timber-color: rgb(211, 208, 203);
   --accent-color: rgb(133, 112, 171);
   --background-color: rgb(236, 235, 230);
+  --formular-background-color: whitesmoke;
   --body-font: 'IBM Plex Mono', Helvetica, sans-serif;
   --headers-font: Alegreya, Cochin, Cambria, Georgia, Times, 'Times New Roman', serif;
   --hero-cards-font: Vollkorn, Alegreya, serif;
@@ -333,9 +334,6 @@ ul li::marker{
   background-size: cover;
   background-image: url('niklas-edited-vintage.jpg');
   transform: scaleX(-1);
-  background-color: var(--background-color);
-  border: 1px solid var(--primary-color);
-  border-radius: 20px;
   margin-right: 2em;
 }
 
@@ -352,13 +350,6 @@ ul li::marker{
 #skills-right{
   width: 220px;
   height: 350px;
-  /* background-position-x: center;
-  background-size: cover;
-  background-image: url('niklas-edited-vintage.jpg');
-  transform: scaleX(-1);
-  background-color: var(--background-color);
-  border: 1px solid var(--primary-color);
-  border-radius: 20px; */
   margin-left: 2em;
 }
 
@@ -460,9 +451,14 @@ form{
 
 input,
 textarea{
+  font-size: 0.9em;
+  color: var(--primary-color);
+  font-family: "IBM Plex Mono", "Helvetica", sans-serif;
   border: 1px var(--primary-color) solid;
-  border-radius: 5px;
+  background-color: whitesmoke;;
   padding: 0.6em;
+  border-radius: 10px;
+  border-bottom: 2px solid var(--primary-color);
   margin-bottom: 1.6em;
 }
 
@@ -485,15 +481,8 @@ textarea{
     .formular-top-right{
       width: 57%;
     }
-
     .text-input{
-      font-size: 0.9em;
-      font-family: "IBM Plex Mono", "Helvetica", sans-serif;
-      color: var(--primary-color);
-      background-color: var(--background-color);
       width: 100%;
-      border-bottom: 2px solid var(--primary-color);
-      border-radius: 10x;
     }
     .text-input:focus {
       outline: transparent;
@@ -503,15 +492,9 @@ textarea{
 
 .textarea{
   resize: vertical;
-  font-size: 0.9em;
-  font-family: "IBM Plex Mono", "Helvetica", sans-serif;
-  color: var(--primary-color);
-  background-color: var(--background-color);
   width: 60%;
   max-width: 100%;
   min-height: 10em;
-  border-bottom: 2px solid var(--primary-color);
-  border-radius: 10x;
 }
     .textarea:focus {
       outline: transparent;
