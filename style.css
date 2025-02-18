@@ -466,7 +466,7 @@ textarea{
 input:focus,
 textarea:focus{
   outline: transparent;
-  background-color: var(--formular-background-color-active);
+  background-color: var(--formular-active-color);
   border-bottom: 2px solid var(--primary-color);
   border-right: 2px solid var(--primary-color);
 }
@@ -512,9 +512,12 @@ textarea:focus{
 
 
 /* w. START of Changing Backgrounds */
+#about{
+  background-color: var(--hero-city-color);
+}
 #skills,
 #skills-top{
-  background-color: var(--hero-city-color);
+  
 }
 #skills-top{
   position: relative;
@@ -524,6 +527,7 @@ textarea:focus{
 
 #project,
 #project-top{
+background-color: var(--hero-city-color);
 
 }
 #project-top{
@@ -534,7 +538,7 @@ textarea:focus{
 
 #contact,
 #contact-top{
-  background-color: var(--hero-city-color);
+
 }
 #contact-top{
   position: relative;
@@ -547,8 +551,7 @@ textarea:focus{
   position: relative;
 }
 
-
-  /* Skills divider */
+  /* Project divider */
   .skills-divider {
     position: absolute;
     top: 0;
@@ -560,15 +563,15 @@ textarea:focus{
   .skills-divider svg {
     position: relative;
     display: block;
-    width: calc(188% + 1.3px);
-    height: 45px;
-    transform: rotateY(180deg);
+    width: calc(100% + 1.3px);
+    height: 22px;
   }
   .skills-divider .skills-fill {
-    fill: #ECEBE6;
+    fill: #DEDDD9;
   }
 
-  /* Project divider */
+
+  /* Contact divider */
   .project-divider {
     position: absolute;
     top: 0;
@@ -580,15 +583,14 @@ textarea:focus{
   .project-divider svg {
     position: relative;
     display: block;
-    width: calc(100% + 1.3px);
-    height: 22px;
+    width: calc(254% + 1.3px);
+    height: 40px;
+    transform: rotateY(180deg);
   }
   .project-divider .project-fill {
-    fill: #DEDDD9;
+    fill: #ECEBE6;
   }
-
-
-  /* Contact divider */
+  /* Skills divider */
   .contact-divider {
     position: absolute;
     top: 0;
@@ -600,13 +602,15 @@ textarea:focus{
   .contact-divider svg {
     position: relative;
     display: block;
-    width: calc(254% + 1.3px);
-    height: 40px;
+    width: calc(188% + 1.3px);
+    height: 45px;
     transform: rotateY(180deg);
   }
   .contact-divider .contact-fill {
-    fill: #ECEBE6;
+    fill: var(--hero-city-color);
   }
+
+
 
 
   /* Footer divider */
