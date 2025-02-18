@@ -477,23 +477,33 @@ textarea{
 
 
 .formular-container{
-  width: 100%;
-  height: auto;
   display: flex;
   flex-flow: column wrap;
+  width: 100%;
+  height: auto;
 }
 .formular-top{
   width: 100%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
-}
-.formular-top-left{
-  width: 30%;
-}
-.formular-top-right{
-  width: 30%;
-}
+  justify-content: flex-start; /* Vill kunna köra space between för bättre mobilanpassning */
+    }
+    .formular-top-left{
+      width: 30%;
+    }
+    .formular-top-right{
+      width: 30%;
+    }
+
+    .text-input{
+      font-size: 0.9em;
+      font-family: "IBM Plex Mono", "Helvetica", sans-serif;
+      color: var(--primary-color);
+      background-color: var(--background-color);
+      width: 100%;
+      border-bottom: 2px solid var(--primary-color);
+      border-radius: 10x;
+    }
 
 
 
