@@ -504,7 +504,10 @@ textarea{
       border-bottom: 2px solid var(--primary-color);
       border-radius: 10x;
     }
-
+    .text-input:focus {
+      outline: transparent;
+      background-color: white;
+    }
 
 
 
