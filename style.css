@@ -449,7 +449,6 @@ form{
   text-align: left;
   margin-top: 1.2em;
 }
-
 input,
 textarea{
   font-size: 0.9em;
@@ -461,7 +460,6 @@ textarea{
   border-radius: 10px;
   margin-bottom: 1.6em;
 }
-
 input:focus,
 textarea:focus{
   outline: transparent;
@@ -478,16 +476,18 @@ textarea:focus{
 }
 
 .formular-top{
-  width: 60%;
+  width: 63%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between; /* Vill kunna köra space between för bättre mobilanpassning */
 }
     .formular-top-left{
-      width: 38%;
+      min-width: 190px;
+      width: 40%;
     }
     .formular-top-right{
-      width: 57%;
+      min-width: 300px;
+      width: 55%;
     }
     .text-input{
       width: 100%;
@@ -495,7 +495,8 @@ textarea:focus{
 
 .textarea{
   resize: vertical;
-  width: 60%;
+  width: 63%;
+  min-width: 300px;
   max-width: 100%;
   min-height: 10em;
 }
