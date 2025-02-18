@@ -477,7 +477,10 @@ textarea{
   border-bottom: 2px solid var(--primary-color);
   border-radius: 10x;
 }
-
+    .textarea:focus {
+      outline: transparent;
+      background-color: whitesmoke;
+    }
 
 .formular-container{
   display: flex;
