@@ -374,6 +374,10 @@ ul li::marker{
   height: 75px;
 }
 
+.skills-cv-btn{
+  margin-top: 2em;
+}
+
 /* END of Skills section */
 
 /* 7. START of Projects */
