@@ -736,6 +736,7 @@ footer{
 #weatherContainer{
   display: flex;
   align-self: flex-end;
+  margin-right: 3em;
 }
 #weatherInfo{
   color: var(--primary-color-faded);
