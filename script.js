@@ -82,7 +82,7 @@ window.onload = () => {
       const location = data.name;
       document.querySelector(
         "#weatherInfo"
-      ).innerHTML = `Temperaturen i ${location} är ${temperature}°C.`;
+      ).innerHTML = `${location} just nu: ${temperature}°C`;
     })
     .catch((error) => {
       console.error("Det gick inte att hämta väderdata:", error);
