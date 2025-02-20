@@ -567,20 +567,6 @@ textarea:focus{
 /* END of Contact */
 
 
-/* 9. START of Weather */
-
-#weatherContainer{
-  display: flex;
-  align-self: flex-end;
-  justify-self: flex-end;
-}
-#weatherInfo{
-
-}
-
-/* 9. END of Weather */
-
-
 /* w. START of Changing Backgrounds */
 #about{
   background-color: var(--hero-city-color);
@@ -716,7 +702,7 @@ footer{
   justify-content: center;
   flex-direction: column;
   font-family: var(--body-font);
-  height: 18em;
+  height: 10em;
   background-color: var(--timber-color);
 }
 .socials-container{
@@ -746,6 +732,18 @@ footer{
 }
 #scotty{
 }
+
+#weatherContainer{
+  display: flex;
+  align-self: flex-end;
+}
+#weatherInfo{
+  color: var(--primary-color-faded);
+}
+
+
+
+
 /* x. END of Footer */
 
 
