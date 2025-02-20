@@ -366,6 +366,13 @@ ul li::marker{
 /* END of About Me */
 
 /* 6. START of Skills section */
+#skills{
+  background-image: url('/images/puzzle-pieces.png');
+  background-position-x:70%;
+  background-position-y: 25%;
+  background-repeat: no-repeat;
+}
+
 
 #skills-right{
   width: 220px;
@@ -374,6 +381,7 @@ ul li::marker{
 }
 
 #skills-left{
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
