@@ -393,10 +393,9 @@ ul li::marker{
 
 /* 7. START of Projects */
 #project{
-    background-image: url('/images/drawing.png');
+    background-image: url('/images/plan.png');
     background-position-x: 21%;
     background-position-y: 43%;
-    background-size: 15%;
     background-repeat: no-repeat;
 }
 #project-left{
