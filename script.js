@@ -63,3 +63,30 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // END Ramlande kort i hero
+
+
+// START of Weather
+
+window.onload = () => {
+  const url = 'http://api.openweathermap.org/data/2.5/weather?id=524901&lat=62.632922&lon=17.799248&units=metric&lang=sv&appid=8442f21f549f1ef24a8124568a2536af'
+
+  https: fetch(url)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Anslutningen avbröts");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      const temperature = data.main.temp;
+      const location = data.name;
+      document.querySelector(
+        "#weatherInfo"
+      ).innerHTML = `Temperaturen i ${location} är ${temperature}°C.`;
+    })
+    .catch((error) => {
+      console.error("Det gick inte att hämta väderdata:", error);
+    });
+}
+
+// END of Weather
