@@ -672,7 +672,7 @@ footer{
   justify-content: center;
   flex-direction: column;
   font-family: var(--body-font);
-  height: 20em;
+  height: 18em;
   background-color: var(--timber-color);
 }
 .socials-container{
@@ -685,17 +685,17 @@ footer{
   display: flex;
   flex-flow: column;
   position: relative;
-  width: 100%;
+  width: 200px;
   text-align: center;
   vertical-align: center;
-  margin-bottom: 5em;
+  margin-bottom: 3em;
 }
 #beam-me-up{
   position: absolute;
   display: inline-block;
   transform: translate(-50%, -50%);
   top: 50%;
-  left: 48%;
+  left: 50%;
   transform: rotate(-22deg);
   font-size: 0.8em;
   color: var(--primary-color);
