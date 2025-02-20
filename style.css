@@ -161,14 +161,15 @@ section{
   justify-content: center;
   scroll-margin-top: 14em;
   width: 100%;
-  padding-top: 3em;
-  padding-bottom: 3em;
+}
+section:not(#hero){
+  padding-top: 4em;
+  padding-bottom: 12em;
 }
 
 article{
   width: 100%;
   max-width: 1920px;
-  padding-bottom: 10em;
 }
 
 ul li::marker{
@@ -343,6 +344,8 @@ ul li::marker{
 
 /* 5. START of About Me */
 #about{
+  display: flex;
+  flex-direction: column;
   scroll-margin-top: 6em;
   padding-top: 15em;
 }
@@ -361,6 +364,9 @@ ul li::marker{
 }
 
 #about-me-right{
+}
+#about-me-testamonials{
+  width: 100%;
 }
 
 /* END of About Me */
