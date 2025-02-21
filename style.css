@@ -502,7 +502,7 @@ ul li::marker{
 }
 .contact-options li {
   padding-bottom: 0.5em;
-}
+} 
 
 form{
   text-align: left;
@@ -558,6 +558,10 @@ textarea:focus{
   min-width: 300px;
   max-width: 100%;
   min-height: 10em;
+}
+
+#result{
+  margin-left: 3em;
 }
 
 .obligatory{

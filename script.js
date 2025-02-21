@@ -68,26 +68,70 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // START of Weather
 
-window.onload = () => {
-  const url = 'https://api.openweathermap.org/data/2.5/weather?lat=62.632922&lon=17.799248&units=metric&lang=sv&appid=8442f21f549f1ef24a8124568a2536af'
+// window.onload = () => {
+//   const url = 'https://api.openweathermap.org/data/2.5/weather?lat=62.632922&lon=17.799248&units=metric&lang=sv&appid=8442f21f549f1ef24a8124568a2536af'
 
-  https: fetch(url)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Anslutningen avbröts");
-      }
-      return response.json();
-    })
-    .then((data) => {
-      const temperature = data.main.temp;
-      const location = data.name;
-      document.querySelector(
-        "#weatherInfo"
-      ).innerHTML = `${location} just nu: ${temperature}°C`;
-    })
-    .catch((error) => {
-      console.error("Det gick inte att hämta väderdata:", error);
-    });
-}
+//   https: fetch(url)
+//     .then((response) => {
+//       if (!response.ok) {
+//         throw new Error("Anslutningen avbröts");
+//       }
+//       return response.json();
+//     })
+//     .then((data) => {
+//       const temperature = data.main.temp;
+//       const location = data.name;
+//       document.querySelector(
+//         "#weatherInfo"
+//       ).innerHTML = `${location} just nu: ${temperature}°C`;
+//     })
+//     .catch((error) => {
+//       console.error("Det gick inte att hämta väderdata:", error);
+//     });
+// }
 
 // END of Weather
+
+
+// START of Formular Popup
+
+const form = document.querySelector('#form');
+const result = document.querySelector('#result');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const formData = new FormData(form);
+  const object = Object.fromEntries(formData);
+  const json = JSON.stringify(object);
+  result.textContent = "Vad god vänta..."
+
+    fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        })
+        .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+                result.textContent = "Tack för ditt meddelande. Jag återkommer inom kort.";
+            } else {
+                console.log(response);
+                result.textContent = json.message;
+            }
+        })
+        .catch(error => {
+            console.log(error);
+            result.textContent = "Något gick fel, försök igen.";
+        })
+        .then(function() {
+            form.reset();
+            setTimeout(() => {
+                result.style.display = "none";
+            }, 3000);
+        });
+});
+
+// End of Formular Popup

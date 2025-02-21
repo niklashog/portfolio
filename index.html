@@ -78,8 +78,9 @@
             <h2>Om mig</h2>
             <div class="linebreak"></div>
             <p>
-              Sambo, far, husse och blivande systemutvecklare.
+              Kom ihåg att slå igång väder-api igen. 
             </p>
+            <p>Sambo, far, husse och blivande systemutvecklare.</p>
             <p>
               Vilken fantastisk överaskning att jag skulle hitta glädje i ett karriärsbyte vid 38 års ålder. Har också en stark tro att kunna fortsätta dra nytta av mina 18 år inom försäljning, ledarskap och coachande.
             </p>
@@ -316,7 +317,14 @@
             </ul>
 
             <div class="formular-container">
-              <form action="https://http-echo-server.azurewebsites.net" method="post">
+              <form 
+              method="POST"
+              id="form"
+              >
+              
+              <input type="hidden" name="access_key" value="fac387ac-f140-4aef-b678-6e99a37940f0" />
+              <input type="hidden" name="subject" value="Nytt meddelande via Web3Forms" />
+              <input type="checkbox" name="botcheck" id="" style="display: none;">
             
                   <div class="formular-top">
             
@@ -345,10 +353,11 @@
                 <div class="formular-bot">
             
                   <div>
-                    <textarea class="textarea" name="message" placeholder="Ditt meddelande här.."></textarea>
+                    <textarea class="textarea" name="message" placeholder="Ditt meddelande här.. *" required></textarea>
                   </div>
-            
+
                   <button class="submit-button" type="submit">Skicka</button>
+                  <span id="result"></span>
                   <div class="obligatory">* Fältet är obligatoriskt</div>
                   
                 </div>
