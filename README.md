@@ -1,67 +1,45 @@
-# Web portfolio
+# My web portfolio
 
-Creating my very first web portfolio. The first project in html, css and javascript that I have attempted.
+This project is a responsive single page application that highlights my education, skills and contact information. No bootstraps on this one.
 
-## Description
+## About the project
 
-An in-depth paragraph about your project and overview of use.
+This website is part of my two year education towards becoming a .NET developer. 
+The website was built to put my developer self on the web and my contact info at your fingertips.
+The goal is to make it easier for future employers to get a decent understanding of who I am, what I know, and how I could contribute.
 
-Web portfolio created with HTML5, CSS and Javascript.
+## Technologies used
+-   HTML5
+-   CSS3
+-   JavaScript
+-   Github
 
 ## Getting Started
 
+url soon to come
+
+
 ### Dependencies
 
-Your web browser of choice.
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+Your modern web browser of choice :)
 
-### Installing
+## Author
 
-https://niklashog.github.io ???
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
-
-## Authors
-
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+- That would be me: Niklas Högström
+- This would be mine: hogstromniklas@gmail.com
 
 ## Version History
 
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+Always up to date, always out of date.
+* See commit changes for details.
 
 ## Acknowledgments
 
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+Credit to..
+
+* Google Gemini for actually being good at creating an awesome silhouette of my home town.
+* Fontawesome for being awesome.
+* Flaticon.com and it's following creators:
+   * Contact icons created by smashingstocks (https://www.flaticon.com/free-icons/contact)
+   * Puzzle icons created by Candy Design - (https://www.flaticon.com/free-icons/puzzle)
+   * Accountability icons created by Design Circle - (https://www.flaticon.com/free-icons/accountability)
