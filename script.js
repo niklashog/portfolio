@@ -103,7 +103,7 @@ form.addEventListener('submit', function(e) {
   const formData = new FormData(form);
   const object = Object.fromEntries(formData);
   const json = JSON.stringify(object);
-  result.textContent = "Vad god vänta..."
+  result.textContent = "Bara en liten stund...";
 
     fetch('https://api.web3forms.com/submit', {
             method: 'POST',
@@ -116,7 +116,7 @@ form.addEventListener('submit', function(e) {
         .then(async (response) => {
             let json = await response.json();
             if (response.status == 200) {
-                result.textContent = "Tack för ditt meddelande. Jag återkommer inom kort.";
+                result.textContent = "Så! Allt gick bra :)";
             } else {
                 console.log(response);
                 result.textContent = json.message;

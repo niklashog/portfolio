@@ -18,8 +18,9 @@ y. Buttons
 
 Table of Contents */
 
-
 /* 0. START of Reset */
+
+
 *,
 *::before,
 *::after{
@@ -669,8 +670,6 @@ background-color: var(--hero-city-color);
   .contact-divider .contact-fill {
     fill: var(--hero-city-color);
   }
-
-
 
 
   /* Footer divider */
