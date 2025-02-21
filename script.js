@@ -14,7 +14,7 @@ function onScrollThrottled() {
 }
 
 let lastScrollPosition = 0;
-const navbar = document.getElementById("navbar");
+const navbar = document.querySelector("#navbar");
 
 function onScroll() {
   if (scrollHandlingPaused) return; // Aktiv flagga = stoppad autohide
@@ -37,15 +37,16 @@ function onScroll() {
   lastScrollPosition = currentScrollPosition;
 }
 
-// Vid klick i navbar, pausa att den döljs vid scroll
-document.querySelectorAll("#navbar a, .hero-bottom a").forEach(link => {
-  link.addEventListener("click", () => {
-    scrollHandlingPaused = true;
-    navbar.style.top = "0"; // Säkerställ att navbaren visas igen
+// Vid klick i navbar, kort paus på autohide vid scroll
+document.querySelectorAll("#navbar a, .hero-bottom a")
+  .forEach(link => {
+    link.addEventListener("click", () => {
+      scrollHandlingPaused = true;
+      navbar.style.top = "0"; // Säkerställ att navbaren visas igen
 
-    setTimeout(() => {
-      scrollHandlingPaused = false; // Återaktivera auto-hide
-    }, 1000); // Tid som auto-hide är inaktiverad
+      setTimeout(() => {
+        scrollHandlingPaused = false; // Återaktivera auto-hide
+      }, 1000); // Tid som auto-hide är inaktiv
   });
 });
 
@@ -67,8 +68,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // START of Weather
 
+//efter weather? låg denna id=524901&
+
 window.onload = () => {
-  const url = 'http://api.openweathermap.org/data/2.5/weather?id=524901&lat=62.632922&lon=17.799248&units=metric&lang=sv&appid=8442f21f549f1ef24a8124568a2536af'
+  const url = 'https://api.openweathermap.org/data/2.5/weather?lat=62.632922&lon=17.799248&units=metric&lang=sv&appid=8442f21f549f1ef24a8124568a2536af'
 
   https: fetch(url)
     .then((response) => {
