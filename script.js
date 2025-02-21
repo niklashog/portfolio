@@ -68,8 +68,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // START of Weather
 
-//efter weather? låg denna id=524901&
-
 window.onload = () => {
   const url = 'https://api.openweathermap.org/data/2.5/weather?lat=62.632922&lon=17.799248&units=metric&lang=sv&appid=8442f21f549f1ef24a8124568a2536af'
 
