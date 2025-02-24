@@ -974,6 +974,49 @@ footer{
   color: var(--primary-color-faded);
 }
 
+/* START of Project Cards */
+.project-card-container{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+.project-card{
+  display: flex;
+  flex-direction: column;
+  margin: 0.9em;
+  width: 10em;
+  height: 16em;
+  background-color: var(--background-color);
+  border: 1px solid var(--toupe-color);
+  border-radius: 3px;
+  padding: 1em;
+}
+.project-card:hover{
+  background-color: rgb(218, 165, 191);
+  color: rgb(67, 29, 67);
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+}
+.project-card:active{
+  opacity: 0.95;
+  background-color: rgb(218, 165, 191);
+  color: rgb(67, 29, 67);
+}
+.project-icon-container{
+  height: 25%;
+  font-size: 1.2em;
+}
 
+.project-card-header{
+  font-family: var(--headers-font);
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+.project-card-body{
+  font-size: 0.75em;
+}
+/* END of Project Cards */
 
 }
