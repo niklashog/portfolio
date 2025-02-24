@@ -103,7 +103,7 @@ form.addEventListener('submit', function(e) {
   const formData = new FormData(form);
   const object = Object.fromEntries(formData);
   const json = JSON.stringify(object);
-  result.textContent = "Bara en liten stund...";
+  result.textContent = "Skickar meddelande..";
 
     fetch('https://api.web3forms.com/submit', {
             method: 'POST',
