@@ -912,3 +912,34 @@ footer{
   height: 8em;
 }
 }
+
+
+
+
+@media (max-width: 480px){
+
+  /* 2. START Navbar & Header */
+  nav{
+    height: 4em;
+  }
+  nav ul a{
+    font-size: 1.3em;
+    padding: 0em 0.4em;
+    text-decoration: none;
+  }
+
+    /* START Länkar i navbar. Kopplat till JS-styling */
+    #navbar a {
+      position: sticky;
+    }
+    #navbar a::after {
+      position: sticky;
+    }
+    #navbar a:hover::after {
+      opacity: 0;
+    }
+    /* END Länkar i navbar. Kopplat till JS-styling */
+
+/* END Navbar & Header */
+
+}
