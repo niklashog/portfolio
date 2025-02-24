@@ -376,6 +376,7 @@ ul li::marker{
   background-position-y: 25%;
   background-repeat: no-repeat;
 }
+
 .icon{
   width: 30px;
   height: 30px;
@@ -1020,3 +1021,25 @@ footer{
 /* END of Project Cards */
 
 }
+
+/* Background-image removal */
+#skills{
+  background-image: none;
+  background-position-x:70%;
+  background-position-y: 25%;
+  background-repeat: no-repeat;
+}
+#project{
+  background-image: none;
+  background-position-x: 15%;
+  background-position-y: 30%;
+  background-repeat: no-repeat;
+}
+#contact{
+  background-image: none;
+  background-position-x:62%;
+  background-position-y: 28%;
+  background-repeat: no-repeat;
+}
+/* Background-image removal */
+
