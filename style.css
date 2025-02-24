@@ -197,26 +197,6 @@ ul li::marker{
   width: 100%;
   padding: 1em;
 }
-.vertical-left{
-}
-.vertical-left-big{
-  width: 600px;
-}
-.vertical-right{
-
-}
-.vertical-right-big{
-  width: 600px;
-}
-.vertical-aside-r{
-  margin-left: 2em;
-  width: 60%;
-}
-.vertical-aside-l{
-  margin-right: 2em;
-  width: 60%;
-}
-
 
 
 .linebreak{
@@ -366,8 +346,8 @@ ul li::marker{
 .clip-path{
   clip-path: polygon(12% 4%, 98% 2%, 94% 85%, 12% 88%);
 }
-
 #about-me-right{
+  width: 600px;
 }
 #testamonials{
   display: flex;
@@ -396,27 +376,10 @@ ul li::marker{
   background-position-y: 25%;
   background-repeat: no-repeat;
 }
-
-
-#skills-right{
-  width: 220px;
-  height: 350px;
-  margin-left: 2em;
-}
-
-#skills-left{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  text-align: right;
-}
-
 .icon{
   width: 30px;
   height: 30px;
 }
-
 .skills-cv-btn{
   margin-top: 2em;
 }
@@ -426,18 +389,17 @@ ul li::marker{
 /* 7. START of Projects */
 #project{
     background-image: url('/images/plan.png');
-    background-position-x: 21%;
-    background-position-y: 43%;
+    background-position-x: 15%;
+    background-position-y: 30%;
     background-repeat: no-repeat;
 }
-#project-left{
-  width: 220px;
-  height: 350px;
-  margin-right: 2em;
-}
-
 
 #project-right{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
 }
 
     /* START of Project Cards */
@@ -445,6 +407,7 @@ ul li::marker{
       display: flex;
       flex-flow: row wrap;
       justify-content: center;
+      margin-top: 2em;
     }
     .project-card{
       display: flex;
@@ -796,10 +759,66 @@ footer{
 
 
 
-@media (max-width: 1080px){
+@media (max-width: 1920px){
+
+/* 3. START of Global styling */
+
+  body, html {
+    line-height: 1.5;
+    font-size: 1em;
+  }
+  section{
+    scroll-margin-top: 14em;
+    width: 100%;
+  }
+  section:not(#hero){
+    padding-top: 4em;
+    padding-bottom: 6em;
+  }
+  article{
+    width: 100%;
+    max-width: 1920px;
+    margin-bottom: 2em;
+  }
+   
+  .no-split{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 0em 1em;
+  }
+  .centered-content{
+    width: 852px;
+  }
+  
+  .vertical-split{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 0em 1em;
+  }
+  .vertical-left-big{
+    width: 600px;
+  }
+  .vertical-right-big{
+    width: 600px;
+  }
+  .vertical-aside-r{
+    margin-left: 2em;
+    width: 60%;
+  }
+  .vertical-aside-l{
+    margin-right: 2em;
+    width: 60%;
+  }
 
 
-  /* 4. START of Hero section */
+/* END of Global Styling */
+
+
+/* 4. START of Hero section */
 #hero{
   width: 100vw;
   height: 100vh;
@@ -807,7 +826,7 @@ footer{
 #hero::after{
   content: '';
   position: absolute;
-  width: 1080px;
+  width: 1920px;
   height: 100%;
   background-image: url('/images/hsand_bg_edited.jpg');
   background-size: cover;
@@ -817,21 +836,10 @@ footer{
 }
   .hero-top{
     height: 55%;
-    display: flex;
-    flex-flow: wrap row;
-    align-items: center;
-    justify-content: center;
-    opacity: 1;
-    z-index: 2;
   }
 
-  /* Top Left*/
+  /* Top Left */
     .hero-cards-container{
-      display: flex;
-      flex-flow: row wrap;
-      align-content: center;
-      justify-content: center;
-      font-weight: bold;
       width: 13em;
       height: 20em;
       font-size: 1.5em;
@@ -843,44 +851,7 @@ footer{
       animation: fallDown 0.45s ease forwards;
       padding: 0.5em 1.1em;
     }
-
-    @keyframes fallDown {
-      0% {
-        opacity: 0;
-        transform: translateY(-100px) rotate(0deg); /* Starta utan rotation */
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0) rotate(var(--rotation, 0deg)); /* Behåll rotationen */
-      }
-    }
-
-    .rotate-10-pos {
-      --rotation: 10deg;
-    }
-    .rotate-10-neg {
-      --rotation: -10deg;
-    }
-    .rotate-22-pos {
-      --rotation: 22deg;
-    }
-    .rotate-22-neg {
-      --rotation: -22deg;
-    }
-    .background-on-accent{
-      color: var(--background-color);
-      background-color:var(--accent-color);
-    }
-    .primary-on-timber{
-      color: var(--primary-color);
-      background-color: var(--timber-color);
-    }
-
-  /* Top Right*/
-  .hero-right{
-    display:flex;
-    flex-flow: wrap column;
-  }
+  /* Top Right */
     .my-name-container{
       color: var(--primary-color);
       width: 22em;
@@ -899,15 +870,45 @@ footer{
       margin-left: 2em;
       width: 22em;
     }
-
-    /* Bottom */
-
-
-
-
 /* END of Hero section */
 
+/* 5 START of About me */
+#testamonials ul{
+  padding: 0em 2em;
+  width: 500em;
+}
+.quote{
+  font-size: 0.9em;
+  color: var(--primary-color-faded);
+  font-style: italic;
+}
+.cite{
+  font-size: 0.9em;
+  color: var(--primary-color-faded);
+}
+/* END of About me */
 
 
+/* w. START of Changing Backgrounds */
+#skills-top{
+  width: 100%;
+  height: 5em;
+}
 
+#project-top{
+  height: 5em;
+  width: 100%;
+}
+
+#contact-top{
+  width: 100%;
+  height: 5em;
+}
+
+/* w. END of Changing Backgrounds */
+
+
+footer{
+  height: 8em;
+}
 }
