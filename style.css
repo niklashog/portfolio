@@ -923,12 +923,15 @@ footer{
 
   /* 2. START Navbar & Header */
   nav{
-    height: 4em;
+    height: 5em;
   }
   nav ul a{
     font-size: 1.3em;
     padding: 0em 0.4em;
     text-decoration: none;
+  }
+  section{
+    scroll-margin-top: 4em;
   }
 
     /* START Länkar i navbar. Kopplat till JS-styling */
@@ -943,167 +946,167 @@ footer{
     }
     /* END Länkar i navbar. Kopplat till JS-styling */
 
-/* END Navbar & Header */
+  /* END Navbar & Header */
 
-/* 4. START of Hero section */
-#hero{
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 0;
-  pointer-events: none;
-  width: 100vw;
-  height: 100vh;
-}
-#hero::after{
-  width: 900px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  opacity: 0.07;
-  z-index: -10;
-}
-.hero-top{
-  width: 98%;
-  position: relative;
-  height: 80%;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
-  opacity: 1;
-  z-index: 2;
-}
-
-/* START Top Left*/
-.hero-left{
-  position: absolute;
-  top: 34em;
-  left: 0em;
-  z-index: -5;
-}
-.hero-cards-container{
-  opacity: 0.8;
-  display: flex;
-  flex-flow: row wrap;
-  align-content: center;
-  justify-content: center;
-  font-weight: bold;
-  width: 95%;
-  height: 3em;
-  font-size: 1.2em;
-}
-.hero-cards-container span {
-  font-family: var(--hero-cards-font);
-  display: inline-block;
-  opacity: 0;
-  animation: fallDown 0.45s ease forwards;
-  padding: 0.5em 1.1em;
-}
-
-
-/* END Top Left*/
-
-  /* START Top Right*/
-  .hero-right{
-    position: absolute;
-    top: 6em;
-    left: 0em;
-    z-index: 1;
+  /* 4. START of Hero section */
+  #hero{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+    pointer-events: none;
+    width: 100vw;
+    height: 100vh;
   }
-    .my-name-container{
-      margin-left: 2em;
+  #hero::after{
+    width: 900px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    opacity: 0.07;
+    z-index: -10;
+  }
+  .hero-top{
+    width: 98%;
+    position: relative;
+    height: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    z-index: 2;
+  }
+
+  /* START Top Left*/
+  .hero-left{
+    position: absolute;
+    top: 34em;
+    left: 0em;
+    z-index: -5;
+  }
+  .hero-cards-container{
+    opacity: 0.8;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    font-weight: bold;
+    width: 95%;
+    height: 3em;
+    font-size: 1.2em;
+  }
+  .hero-cards-container span {
+    font-family: var(--hero-cards-font);
+    display: inline-block;
+    opacity: 0;
+    animation: fallDown 0.45s ease forwards;
+    padding: 0.5em 1.1em;
+  }
+  /* END Top Left*/
+
+    /* START Top Right*/
+    .hero-right{
+      position: absolute;
+      top: 6em;
+      left: 0em;
+      z-index: 1;
     }
-    .my-name{
-      font-size: 5em;
-      line-height: 1.2em;
-      letter-spacing: -2px;
-    }
-    .hero-subheader{
-      color: var(--primary-color-faded);
-      margin-top: 1.5em;
-      margin-left: 2em;
-      width: 22em;
-    }
-  /* END Top Right*/
+      .my-name-container{
+        margin-left: 2em;
+      }
+      .my-name{
+        font-size: 5em;
+        line-height: 1.2em;
+        letter-spacing: -2px;
+      }
+      .hero-subheader{
+        color: var(--primary-color-faded);
+        margin-top: 1.5em;
+        margin-left: 2em;
+        width: 22em;
+      }
+    /* END Top Right*/
+
+  #testamonials{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 98%;
+  }
+  #testamonials ul{
+    padding: 1em;
+  }
+  .quote{
+    color: var(--primary-color-faded);
+    font-style: italic;
+  }
+  .cite{
+    color: var(--primary-color-faded);
+  }
+
+  /* START of Project Cards */
+  .project-card-container{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .project-card{
+    display: flex;
+    flex-direction: column;
+    margin: 0.8em;
+    width: 10em;
+    height: 16em;
+    background-color: var(--background-color);
+    border: 1px solid var(--toupe-color);
+    border-radius: 3px;
+    padding: 1em;
+  }
+  .project-card:hover{
+    background-color: rgb(218, 165, 191);
+    color: rgb(67, 29, 67);
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+  }
+  .project-card:active{
+    opacity: 0.95;
+    background-color: rgb(218, 165, 191);
+    color: rgb(67, 29, 67);
+  }
+  .project-icon-container{
+    height: 25%;
+    font-size: 1.2em;
+  }
+
+  .project-card-header{
+    font-family: var(--headers-font);
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-bottom: 1em;
+  }
+  .project-card-body{
+    font-size: 0.75em;
+  }
+  /* END of Project Cards */
+
+  /* START Background-image removal */
+  #skills,
+  #project,
+  #contact{
+    background-image: none;
+  }
+  /* START Background-image removal */
 
 
-
-
-
-
-
-#testamonials{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  width: 98%;
-}
-#testamonials ul{
-  padding: 1em;
-}
-.quote{
-  color: var(--primary-color-faded);
-  font-style: italic;
-}
-.cite{
-  color: var(--primary-color-faded);
-}
-
-/* START of Project Cards */
-.project-card-container{
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-.project-card{
-  display: flex;
-  flex-direction: column;
-  margin: 0.8em;
-  width: 10em;
-  height: 16em;
-  background-color: var(--background-color);
-  border: 1px solid var(--toupe-color);
-  border-radius: 3px;
-  padding: 1em;
-}
-.project-card:hover{
-  background-color: rgb(218, 165, 191);
-  color: rgb(67, 29, 67);
-  border-bottom: 2px solid;
-  border-right: 2px solid;
-}
-.project-card:active{
-  opacity: 0.95;
-  background-color: rgb(218, 165, 191);
-  color: rgb(67, 29, 67);
-}
-.project-icon-container{
-  height: 25%;
-  font-size: 1.2em;
-}
-
-.project-card-header{
-  font-family: var(--headers-font);
-  font-size: 1.1em;
-  font-weight: 500;
-  margin-bottom: 1em;
-}
-.project-card-body{
-  font-size: 0.75em;
-}
-/* END of Project Cards */
+  /* START Section divider */
+  #skills-top,
+  #project-top,
+  #contact-top{
+    height: 3em;
+  }
+  /* END Section divider */
 
 }
-
-/* Background-image removal */
-#skills,
-#project,
-#contact{
-  background-image: none;
-}
-/* Background-image removal */
-
