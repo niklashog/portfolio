@@ -242,7 +242,7 @@ ul li::marker{
     z-index: 2;
   }
 
-  /* Top Left*/
+  /* START Top Left*/
     .hero-cards-container{
       display: flex;
       flex-flow: row wrap;
@@ -292,8 +292,9 @@ ul li::marker{
       color: var(--primary-color);
       background-color: var(--timber-color);
     }
+  /* END Top Left*/
 
-  /* Top Right*/
+  /* START Top Right*/
   .hero-right{
     display:flex;
     flex-flow: wrap column;
@@ -316,6 +317,7 @@ ul li::marker{
       margin-left: 2em;
       width: 22em;
     }
+  /* END Top Right*/
 
     /* Bottom */
 
@@ -943,19 +945,94 @@ footer{
 
 /* END Navbar & Header */
 
-
+/* 4. START of Hero section */
+#hero{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+  pointer-events: none;
+  width: 100vw;
+  height: 100vh;
+}
 #hero::after{
-  content: '';
-  position: absolute;
   width: 900px;
-  height: 100%;
-  background-image: url('/images/hsand_bg_edited.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
   opacity: 0.07;
-  z-index: -1;
+  z-index: -10;
 }
+.hero-top{
+  width: 98%;
+  position: relative;
+  height: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  z-index: 2;
+}
+
+/* START Top Left*/
+.hero-left{
+  position: absolute;
+  top: 34em;
+  left: 0em;
+  z-index: -5;
+}
+.hero-cards-container{
+  opacity: 0.3;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: center;
+  font-weight: bold;
+  width: 95%;
+  height: 3em;
+  font-size: 1.2em;
+}
+.hero-cards-container span {
+  font-family: var(--hero-cards-font);
+  display: inline-block;
+  opacity: 0;
+  animation: fallDown 0.45s ease forwards;
+  padding: 0.5em 1.1em;
+}
+
+
+/* END Top Left*/
+
+  /* START Top Right*/
+  .hero-right{
+    position: absolute;
+    top: 6em;
+    left: 0em;
+    z-index: 1;
+  }
+    .my-name-container{
+      margin-left: 2em;
+    }
+    .my-name{
+      font-size: 5em;
+      line-height: 1.2em;
+      letter-spacing: -2px;
+    }
+    .hero-subheader{
+      color: var(--primary-color-faded);
+      margin-top: 1.5em;
+      margin-left: 2em;
+      width: 22em;
+    }
+  /* END Top Right*/
+
+
+
+
+
 
 
 #testamonials{
@@ -1023,23 +1100,10 @@ footer{
 }
 
 /* Background-image removal */
-#skills{
-  background-image: none;
-  background-position-x:70%;
-  background-position-y: 25%;
-  background-repeat: no-repeat;
-}
-#project{
-  background-image: none;
-  background-position-x: 15%;
-  background-position-y: 30%;
-  background-repeat: no-repeat;
-}
+#skills,
+#project,
 #contact{
   background-image: none;
-  background-position-x:62%;
-  background-position-y: 28%;
-  background-repeat: no-repeat;
 }
 /* Background-image removal */
 
