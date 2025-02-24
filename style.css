@@ -985,7 +985,7 @@ footer{
   z-index: -5;
 }
 .hero-cards-container{
-  opacity: 0.3;
+  opacity: 0.8;
   display: flex;
   flex-flow: row wrap;
   align-content: center;
@@ -1057,12 +1057,12 @@ footer{
   width: 100%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .project-card{
   display: flex;
   flex-direction: column;
-  margin: 0.9em;
+  margin: 0.8em;
   width: 10em;
   height: 16em;
   background-color: var(--background-color);
