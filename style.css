@@ -226,15 +226,12 @@ ul li::marker{
 #hero::after{
   content: '';
   position: absolute;
-
   background-image: url('/images/hsand_bg_edited4.jpg');
-
   height: 100%;
   width: 2560px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
-
   opacity: 0.07;
   z-index: -1;
 }
@@ -842,11 +839,12 @@ footer{
 #hero::after{
   content: '';
   position: absolute;
-  width: 1920px;
+  background-image: url('/images/hsand_bg_edited4.jpg');
   height: 100%;
-  background-image: url('/images/hsand_bg_edited.jpg');
-  background-size: cover;
-  background-position: center;
+  width: 1920px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
   opacity: 0.07;
   z-index: -1;
 }
@@ -1061,12 +1059,12 @@ footer{
   }
 
   /* START of Project Cards */
-  .project-card-container{
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-  }
+    .project-card-container{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-end;
+      gap: 0.5em;
+    }
   .project-card{
     display: flex;
     flex-direction: column;
