@@ -399,24 +399,26 @@ width: 900px;
 }
 
 
-.skills-container{
+.skills-container {
   height: 8em;
   width: 100%;
   overflow: hidden;
 }
+
 .skills-container ul {
   padding-left: 1em;
   display: flex;
-  flex-wrap: row wrap-reverse;
-  height: 8em;
-} 
+  flex-flow: column wrap;
+  height: 100%;
+}
+
 .skills-container li {
-  list-style: circle;
+  list-style: disc;
   padding-bottom: 0.5em;
   margin-right: 1em;
   margin-left: 1em;
-  width: 10em;
-} 
+  width: 30%;
+}
 
 
 
