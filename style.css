@@ -362,6 +362,10 @@ width: 900px;
 #about-me-right{
   max-width: 38em;
 }
+.download{
+  margin-top: 1em;
+  margin-right: 0.5em;
+}
 #testamonials{
   display: flex;
   flex-flow: row;
