@@ -838,7 +838,7 @@ footer{
   background-image: url('/images/hsand_bg_edited4.jpg');
   height: 100%;
   width: 1920px;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
   opacity: 0.07;
@@ -933,7 +933,7 @@ footer{
     height: 5em;
   }
   nav ul a{
-    font-size: 1.25em;
+    font-size: 1.4em;
     padding: 0em 0.5em;
     text-decoration: none;
   }
@@ -1060,8 +1060,8 @@ footer{
 
 /* START of skills */
 
-#skills{
-  width: 98%;
+.skills-container ul {
+  width: 100%;
 }
 
 /* END  of skills */
