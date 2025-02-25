@@ -178,7 +178,9 @@ article{
 ul li::marker{
   color: var(--accent-color);
 }
-
+.section-body{
+  margin-bottom: 2em;
+}
 .no-split{
   display: flex;
   flex-flow: row wrap;
@@ -204,7 +206,7 @@ ul li::marker{
   background-color: var(--accent-color);
   width: 12em;
   margin-top: 0.2em;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 /* END of Global styling */
@@ -224,14 +226,26 @@ ul li::marker{
 #hero::after{
   content: '';
   position: absolute;
-  width: 2560px;
+
+  background-image: url('/images/hsand_bg_edited4.jpg');
+
   height: 100%;
-  background-image: url('/images/hsand_bg_edited.jpg');
-  background-size: cover;
-  background-position: center;
+  width: 2560px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+
   opacity: 0.07;
   z-index: -1;
 }
+
+/* 
+
+width: 900px;
+
+*/
+
+
   .hero-top{
     height: 55%;
     display: flex;
@@ -411,13 +425,12 @@ ul li::marker{
     .project-card-container{
       display: flex;
       flex-flow: row wrap;
-      justify-content: center;
-      margin-top: 2em;
+      justify-content: flex-end;
+      gap: 3em;
     }
     .project-card{
       display: flex;
       flex-direction: column;
-      margin: 1em;
       width: 10.5em;
       height: 18em;
       background-color: var(--background-color);
@@ -462,9 +475,7 @@ ul li::marker{
   background-position-y: 28%;
   background-repeat: no-repeat;
 }
-.formular-body{
-  margin-bottom: 1em;
-}
+
 .contact-options {
   padding-left: 1em;
   list-style: disc;
@@ -1009,28 +1020,28 @@ footer{
   }
   /* END Top Left*/
 
-    /* START Top Right*/
-    .hero-right{
-      position: absolute;
-      top: 6em;
-      left: 0em;
-      z-index: 1;
-    }
-      .my-name-container{
-        margin-left: 2em;
-      }
-      .my-name{
-        font-size: 5em;
-        line-height: 1.2em;
-        letter-spacing: -2px;
-      }
-      .hero-subheader{
-        color: var(--primary-color-faded);
-        margin-top: 1.5em;
-        margin-left: 2em;
-        width: 22em;
-      }
-    /* END Top Right*/
+  /* START Top Right*/
+  .hero-right{
+    position: absolute;
+    top: 6em;
+    left: 0em;
+    z-index: 1;
+  }
+  .my-name-container{
+    margin-left: 2em;
+  }
+  .my-name{
+    font-size: 5em;
+    line-height: 1.2em;
+    letter-spacing: -2px;
+  }
+  .hero-subheader{
+    color: var(--primary-color-faded);
+    margin-top: 1.5em;
+    margin-left: 2em;
+    width: 22em;
+  }
+  /* END Top Right*/
 
   #testamonials{
     display: flex;
