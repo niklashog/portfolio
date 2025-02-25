@@ -453,7 +453,7 @@ width: 900px;
       height: 18em;
       background-color: var(--background-color);
       border: 1px solid var(--toupe-color);
-      border-radius: 10px;
+      border-radius: 3px;
       padding: 1em;
     }
     .project-card:hover{
