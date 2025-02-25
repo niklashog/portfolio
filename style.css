@@ -743,7 +743,7 @@ footer{
   font-weight: 600;
   color: var(--background-color);
   background-color: var(--accent-color);
-  border-radius: 10px;
+  border-radius: 3px;
   width: 8em;
   height: 2.5em;
   padding: 5px;
@@ -771,7 +771,7 @@ footer{
   color: var(--primary-color);
   opacity: 0.8;
 }
-.socials-button:active{
+.socials:active{
   opacity: 0.4;
 }
 /* END of Buttons */
