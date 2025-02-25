@@ -552,10 +552,6 @@ textarea:focus{
 #about{
   background-color: var(--hero-city-color);
 }
-#skills,
-#skills-top{
-  
-}
 #skills-top{
   position: relative;
   width: 100%;
@@ -573,10 +569,6 @@ background-color: var(--hero-city-color);
   width: 100%;
 }
 
-#contact,
-#contact-top{
-
-}
 #contact-top{
   position: relative;
   width: 100%;
@@ -709,9 +701,6 @@ footer{
   font-size: 0.8em;
   color: var(--primary-color);
 }
-#scotty{
-}
-
 #weatherContainer{
   display: flex;
   align-self: flex-end;
@@ -1103,6 +1092,9 @@ footer{
   }
   /* END of Project Cards */
 
+
+
+
   /* START Background-image removal */
   #skills,
   #project,
@@ -1111,6 +1103,14 @@ footer{
   }
   /* START Background-image removal */
 
+  /* START of Scroll-margins */
+  #about,
+  #skills,
+  #project,
+  #contact{
+    scroll-margin-top: 3em;
+  }
+  /* END of Scroll-margins */
 
   /* START Section divider */
   #skills-top,
