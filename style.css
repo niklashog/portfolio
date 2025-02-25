@@ -399,7 +399,7 @@ width: 900px;
   height: 30px;
 }
 .skills-cv-btn{
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 
@@ -407,6 +407,7 @@ width: 900px;
   height: 12em;
   width: 100%;
   overflow: hidden;
+  margin-bottom: 4em;
 }
 
 .skills-container ul {
@@ -748,10 +749,8 @@ footer{
   color: var(--background-color);
   background-color: var(--accent-color);
   border-radius: 3px;
-  width: 8em;
-  height: 2.5em;
-  padding: 5px;
-  font-size: 0.9em;
+  padding: 0.5em 1.5em;
+  font-size: 1em;
 }
 .submit-button:hover{
   color: var(--accent-color);
@@ -929,6 +928,9 @@ footer{
 
 
 
+@media (min-width: 768px) and (max-width: 1024px){
+
+}
 
 @media (max-width: 480px){
 
