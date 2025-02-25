@@ -156,7 +156,6 @@ main{
   justify-content: center;
   flex-direction: column;
 }
-
 section{
   display: flex;
   flex-direction: row;
@@ -180,7 +179,7 @@ ul li::marker{
 }
 .section-body{
   margin-bottom: 2em;
-  width: 38em;
+  max-width: 38em;
 }
 .no-split{
   display: flex;
@@ -361,7 +360,7 @@ width: 900px;
   clip-path: polygon(12% 4%, 98% 2%, 94% 85%, 12% 88%);
 }
 #about-me-right{
-  width: 38em;
+  max-width: 38em;
 }
 #testamonials{
   display: flex;
@@ -934,14 +933,15 @@ footer{
     height: 5em;
   }
   nav ul a{
-    font-size: 1.3em;
-    padding: 0em 0.4em;
+    font-size: 1.25em;
+    padding: 0em 0.5em;
     text-decoration: none;
   }
-  section{
-    scroll-margin-top: 4em;
+  article{
+    width: 100%;
+    max-width: 480px;
+    margin-bottom: 2em;
   }
-
     /* START Länkar i navbar. Kopplat till JS-styling */
     #navbar a {
       position: sticky;
@@ -979,7 +979,7 @@ footer{
   .hero-top{
     width: 98%;
     position: relative;
-    height: 80%;
+    height: 95%;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -1038,6 +1038,8 @@ footer{
   }
   /* END Top Right*/
 
+/* START of About Me */
+
   #testamonials{
     display: flex;
     flex-flow: row wrap;
@@ -1054,14 +1056,25 @@ footer{
   .cite{
     color: var(--primary-color-faded);
   }
+/* END of About Me */
+
+/* START of skills */
+
+#skills{
+  width: 98%;
+}
+
+/* END  of skills */
+
+
 
   /* START of Project Cards */
-    .project-card-container{
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: flex-end;
-      gap: 0.5em;
-    }
+  .project-card-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    gap: 0.5em;
+  }
   .project-card{
     display: flex;
     flex-direction: column;
