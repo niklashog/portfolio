@@ -390,7 +390,6 @@ width: 900px;
   background-repeat: no-repeat;
   scroll-margin-top: 24em;
 }
-
 .icon{
   width: 30px;
   height: 30px;
@@ -398,6 +397,23 @@ width: 900px;
 .skills-cv-btn{
   margin-top: 2em;
 }
+.skills-container{
+  height: 8em;
+  width: 100%;
+}
+
+.skills-container li {
+  list-style: circle;
+  padding-bottom: 0.5em;
+  margin-right: 1em;
+  margin-left: 1em;
+} 
+.skills-container ul {
+  padding-left: 1em;
+  display: flex;
+  flex-wrap: wrap;
+} 
+
 
 /* END of Skills section */
 
@@ -1091,8 +1107,6 @@ footer{
     font-size: 0.75em;
   }
   /* END of Project Cards */
-
-
 
 
   /* START Background-image removal */
