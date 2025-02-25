@@ -400,7 +400,7 @@ width: 900px;
 
 
 .skills-container {
-  height: 8em;
+  height: 12em;
   width: 100%;
   overflow: hidden;
 }
@@ -410,14 +410,12 @@ width: 900px;
   display: flex;
   flex-flow: column wrap;
   height: 100%;
+  width: 60%;
 }
 
 .skills-container li {
   list-style: disc;
   padding-bottom: 0.5em;
-  margin-right: 1em;
-  margin-left: 1em;
-  width: 30%;
 }
 
 
