@@ -397,22 +397,27 @@ width: 900px;
 .skills-cv-btn{
   margin-top: 2em;
 }
+
+
 .skills-container{
   height: 8em;
   width: 100%;
+  overflow: hidden;
 }
-
+.skills-container ul {
+  padding-left: 1em;
+  display: flex;
+  flex-wrap: row wrap-reverse;
+  height: 8em;
+} 
 .skills-container li {
   list-style: circle;
   padding-bottom: 0.5em;
   margin-right: 1em;
   margin-left: 1em;
+  width: 10em;
 } 
-.skills-container ul {
-  padding-left: 1em;
-  display: flex;
-  flex-wrap: wrap;
-} 
+
 
 
 /* END of Skills section */
@@ -816,20 +821,6 @@ footer{
     justify-content: center;
     width: 100%;
     padding: 0em 1em;
-  }
-  .vertical-left-big{
-    width: 600px;
-  }
-  .vertical-right-big{
-    width: 600px;
-  }
-  .vertical-aside-r{
-    margin-left: 2em;
-    width: 60%;
-  }
-  .vertical-aside-l{
-    margin-right: 2em;
-    width: 60%;
   }
 
 
