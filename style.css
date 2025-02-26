@@ -462,16 +462,11 @@ width: 900px;
       padding: 1em;
     }
     .project-card:hover{
-      background-color: rgb(218, 165, 191);
-      color: rgb(67, 29, 67);
-      border-bottom: 2px solid;
-      border-right: 2px solid;
-      cursor: pointer;
+      border-bottom: 2px solid var(--accent-color);
+      border-right: 2px solid var(--accent-color);
     }
     .project-card:active{
-      opacity: 0.95;
-      background-color: rgb(218, 165, 191);
-      color: rgb(67, 29, 67);
+      opacity: 0.8;
     }
     .project-icon-container{
       height: 35%;
@@ -486,6 +481,10 @@ width: 900px;
     }
     .project-card-body{
       font-size: 0.8em;
+    }
+
+    #hotelApp:hover{
+      cursor: pointer;
     }
     /* END of Project Cards */
 
@@ -1123,17 +1122,6 @@ width: 100%;
   border-radius: 3px;
   padding: 1em;
 }
-.project-card:hover{
-  background-color: rgb(218, 165, 191);
-  color: rgb(67, 29, 67);
-  border-bottom: 2px solid;
-  border-right: 2px solid;
-}
-.project-card:active{
-  opacity: 0.95;
-  background-color: rgb(218, 165, 191);
-  color: rgb(67, 29, 67);
-}
 .project-icon-container{
   height: 25%;
   font-size: 1.2em;
@@ -1342,17 +1330,6 @@ width: 100%;
     border-radius: 3px;
     padding: 1em;
   }
-  .project-card:hover{
-    background-color: rgb(218, 165, 191);
-    color: rgb(67, 29, 67);
-    border-bottom: 2px solid;
-    border-right: 2px solid;
-  }
-  .project-card:active{
-    opacity: 0.95;
-    background-color: rgb(218, 165, 191);
-    color: rgb(67, 29, 67);
-  }
   .project-icon-container{
     height: 25%;
     font-size: 1.2em;
@@ -1560,17 +1537,6 @@ width: 100%;
   border: 1px solid var(--toupe-color);
   border-radius: 3px;
   padding: 1em;
-}
-.project-card:hover{
-  background-color: rgb(218, 165, 191);
-  color: rgb(67, 29, 67);
-  border-bottom: 2px solid;
-  border-right: 2px solid;
-}
-.project-card:active{
-  opacity: 0.95;
-  background-color: rgb(218, 165, 191);
-  color: rgb(67, 29, 67);
 }
 .project-icon-container{
   height: 25%;
