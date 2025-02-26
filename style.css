@@ -200,7 +200,6 @@ ul li::marker{
   padding: 1em;
 }
 
-
 .linebreak{
   height: 1px;
   background-color: var(--accent-color);
@@ -782,7 +781,7 @@ footer{
 
 
 
-@media (max-width: 1920px){
+@media (min-width: 1024) and (max-width: 1920){
 
     /* 3. START of Global styling */
 
@@ -932,13 +931,29 @@ footer{
 
 
 
-@media (min-width: 768px) and (max-width: 1024px){
+/* @media (min-width: 891px) and (max-width: 1024px){
 
+
+} */
+@media (min-width: 768px) and (max-width: 891px){
+
+  #testamon-article{
+    display: flex;
+    flex-flow: row wrap;
+    width: 41em;
+  }
+  #testamonials{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+  #testamonials ul{
+    padding: 1em 0em;
+  }
 }
 
 @media (min-width: 480px) and (max-width: 768px){
 /* 2. START Navbar & Header */
-
 
 nav{
   height: 5em;
@@ -1050,12 +1065,16 @@ article{
 
 /* START of About Me */
 
-#testamonials{
-  margin-top: 2em;
+#testamon-article{
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
-  width: 100%;
+  width: 41em;
+}
+#testamonials{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+
 }
 #testamonials ul{
   padding: 1em 0em;
