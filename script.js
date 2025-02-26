@@ -65,6 +65,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // END Ramlande kort i hero
 
+//START Links to projects
+
+// Hotel
+const hotelApp = document.querySelector('#hotelApp');
+
+hotelApp.addEventListener('click', () =>{
+  const link = document.createElement('a');
+  link.href ='https://github.com/niklashog/Hotel_Transylvania/';
+  link.target = '_blank';
+
+  document.body.appendChild(link);
+
+  link.click();
+});
+
+//END Links to projects
+
 
 // START of Weather
 
@@ -133,5 +150,6 @@ form.addEventListener('submit', function(e) {
             }, 3000);
         });
 });
+
 
 // End of Formular Popup
