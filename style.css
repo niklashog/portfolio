@@ -350,7 +350,7 @@ width: 900px;
   height: 350px;
   background-position-x: center;
   background-size: cover;
-  background-image: url('niklas-edited-vintage.jpg');
+  background-image: url('/images/niklas-edited-vintage.jpg');
   transform: scaleX(-1);
   margin-right: 2em;
 }
@@ -821,7 +821,6 @@ footer{
       width: 100%;
       padding: 0em 1em;
     }
-
 
   /* END of Global Styling */
 
