@@ -1025,7 +1025,7 @@ footer{
   .hero-right{
     position: absolute;
     top: 6em;
-    left: 0em;
+    left: center;
     z-index: 1;
   }
   .my-name-container{
