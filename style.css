@@ -460,6 +460,7 @@ width: 900px;
       border: 1px solid var(--toupe-color);
       border-radius: 3px;
       padding: 1em;
+      cursor: default;
     }
     .project-card:hover{
       border-bottom: 2px solid var(--accent-color);
@@ -482,8 +483,7 @@ width: 900px;
     .project-card-body{
       font-size: 0.8em;
     }
-
-    #hotelApp:hover{
+    #hotelApp{
       cursor: pointer;
     }
     /* END of Project Cards */
@@ -537,7 +537,7 @@ textarea:focus{
   width: 63%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between; /* Vill kunna köra space between för bättre mobilanpassning */
+  justify-content: space-between;
 }
     .formular-top-left{
       min-width: 190px;
