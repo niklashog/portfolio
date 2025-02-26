@@ -1065,7 +1065,11 @@ footer{
 /* END of About Me */
 
 /* START of skills */
-
+.skills-container {
+  height: 14em;
+  overflow: hidden;
+  margin-bottom: 3em;
+}
 .skills-container ul {
   width: 100%;
 }
