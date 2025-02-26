@@ -346,7 +346,7 @@ width: 900px;
   scroll-margin-top: 16em;
   padding-top: 24em;
 }
-#about-me-left{
+#profile-picture-container{
   width: 220px;
   height: 350px;
   background-position-x: center;
@@ -367,14 +367,15 @@ width: 900px;
   margin-right: 0.5em;
 }
 #testamonials{
+  margin-top: 2em;
   display: flex;
   flex-flow: row;
-  justify-content: space-around;
-  width: 852px;
+  justify-content: space-between;
+  width: 100%;
 }
 #testamonials ul{
+  width: 100%;
   padding: 0em 2em;
-  width: 500em;
 }
 .quote{
   color: var(--primary-color-faded);
@@ -882,9 +883,16 @@ footer{
   /* END of Hero section */
 
   /* 5 START of About me */
+
+  #testamonials{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 100%;
+  }
   #testamonials ul{
+    width: 100%;
     padding: 0em 2em;
-    width: 500em;
   }
   .quote{
     font-size: 0.9em;
@@ -941,7 +949,6 @@ nav ul a{
   text-decoration: none;
 }
 article{
-  width: 94%;
   margin-bottom: 2em;
 }
   /* START Länkar i navbar. Kopplat till JS-styling */
@@ -1044,13 +1051,14 @@ article{
 /* START of About Me */
 
 #testamonials{
+  margin-top: 2em;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  width: 98%;
+  width: 100%;
 }
 #testamonials ul{
-  padding: 1em;
+  padding: 1em 0em;
 }
 .quote{
   color: var(--primary-color-faded);
@@ -1371,7 +1379,7 @@ width: 100%;
 }
 
 
-@media (min-width: 350px) and (max-width: 400px){
+@media (max-width: 400px){
 /* 2. START Navbar & Header */
 nav{
   height: 5em;
