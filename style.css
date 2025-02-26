@@ -466,6 +466,7 @@ width: 900px;
       color: rgb(67, 29, 67);
       border-bottom: 2px solid;
       border-right: 2px solid;
+      cursor: pointer;
     }
     .project-card:active{
       opacity: 0.95;
