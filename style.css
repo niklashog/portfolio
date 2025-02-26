@@ -1064,19 +1064,14 @@ article{
 
 /* START of About Me */
 
-#testamon-article{
-  display: flex;
-  flex-flow: row wrap;
-  width: 41em;
-}
 #testamonials{
   display: flex;
-  flex-flow: column;
-  justify-content: center;
-
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 98%;
 }
 #testamonials ul{
-  padding: 1em 0em;
+  padding: 1em;
 }
 .quote{
   color: var(--primary-color-faded);
