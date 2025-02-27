@@ -558,7 +558,7 @@ textarea:focus{
 }
 
 #result{
-  margin-left: 3em;
+  margin-left: 2em;
 }
 
 .obligatory{
@@ -1296,5 +1296,9 @@ width: 100%;
   background-image: none;
 }
 /* START Background-image removal */
+
+#result{
+  margin-left: 0.2em;
+}
 
 }
