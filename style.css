@@ -915,10 +915,11 @@ footer{
 
 
 
-/* @media (min-width: 891px) and (max-width: 1024px){
+/* @media (min-width: 909px) and (max-width: 1024px){
 
 
 } */
+ 
 @media (min-width: 768px) and (max-width: 908px){
   
   section{
@@ -939,50 +940,54 @@ footer{
   #testamonials ul{
     padding: 1em 0em;
   }
-}
 
-/* START of Project Cards */
-#project .centered-content{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
-}
-.project-card-container{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
-  max-width: 480px;
-  gap: 2em;
-}
-.project-card{
-  display: flex;
-  flex-direction: column;
-  width: 10em;
-  height: 16em;
-  background-color: var(--background-color);
-  border: 1px solid var(--toupe-color);
-  border-radius: 3px;
-  padding: 1em;
-}
-.project-icon-container{
-  height: 25%;
-  font-size: 1.2em;
-}
+    /* START of Project Cards */
+  #project .centered-content{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+  }
+  .project-card-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    max-width: 480px;
+    gap: 2em;
+  }
+  .project-card{
+    display: flex;
+    flex-direction: column;
+    width: 10em;
+    height: 16em;
+    background-color: var(--background-color);
+    border: 1px solid var(--toupe-color);
+    border-radius: 3px;
+    padding: 1em;
+  }
+  .project-icon-container{
+    height: 25%;
+    font-size: 1.2em;
+  }
 
-.project-card-header{
-  font-family: var(--headers-font);
-  font-size: 1.1em;
-  font-weight: 500;
-  margin-bottom: 1em;
-}
-.project-card-body{
-  font-size: 0.75em;
-}
+  .project-card-header{
+    font-family: var(--headers-font);
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-bottom: 1em;
+  }
+  .project-card-body{
+    font-size: 0.75em;
+  }
 /* END of Project Cards */
+}
 
 
 @media (min-width: 481px) and (max-width: 768px){
 /* 2. START Navbar & Header */
+
+section{
+  scroll-margin-top: 7em;
+}
 
 nav{
   height: 5em;
@@ -1175,6 +1180,10 @@ width: 100%;
 
 
 @media (min-width: 400px) and (max-width: 480px){
+
+  section{
+    scroll-margin-top: 2em;
+  }
 
   /* 2. START Navbar & Header */
   nav{
