@@ -962,6 +962,7 @@ article{
 /* START of About Me */
 
 #testamonials{
+  margin-top: 0em;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -1104,6 +1105,7 @@ width: 100%;
 /* START of About Me */
 
   #testamonials{
+    margin-top: 0em;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -1243,6 +1245,7 @@ article{
 /* START of About Me */
 
 #testamonials{
+  margin-top: 0em;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
