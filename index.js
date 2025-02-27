@@ -85,27 +85,39 @@ hotelApp.addEventListener('click', () =>{
 
 // START of Weather
 
-// window.onload = () => {
-//   const url = 'https://api.openweathermap.org/data/2.5/weather?lat=62.632922&lon=17.799248&units=metric&lang=sv&appid=8442f21f549f1ef24a8124568a2536af'
+window.onload = () => {
+  const url = 'https://api.openweathermap.org/data/2.5/weather?lat=62.632922&lon=17.799248&units=metric&lang=sv&appid=8442f21f549f1ef24a8124568a2536af'
 
-//   https: fetch(url)
-//     .then((response) => {
-//       if (!response.ok) {
-//         throw new Error("Anslutningen avbröts");
-//       }
-//       return response.json();
-//     })
-//     .then((data) => {
-//       const temperature = data.main.temp;
-//       const location = data.name;
-//       document.querySelector(
-//         "#weatherInfo"
-//       ).innerHTML = `${location} just nu: ${temperature}°C`;
-//     })
-//     .catch((error) => {
-//       console.error("Det gick inte att hämta väderdata:", error);
-//     });
-// }
+fetch(url)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Anslutningen avbröts");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      const temperature = data.main.temp;
+      const location = data.name;
+      const icon = data.weather[0].icon;
+      const iconUrl = `https://openweathermap.org/img/wn/${icon}.png`;
+      
+      document.querySelector(
+        "#weatherInfo"
+      ).innerHTML = `${location} just nu: ${temperature}°C`;
+      
+      
+      const weatherIcon = document.querySelector("#weatherIcon");
+      weatherIcon.src = iconUrl;
+      weatherIcon.alt = data.weather[0].description;
+
+      document.querySelector(
+        "#weatherIcon"
+      ).innerHTML = `<img src="${iconUrl}" alt="${data.weather[0].description}">`;
+    })
+    .catch((error) => {
+      console.error("Det gick inte att hämta väderdata:", error);
+    });
+}
 
 // END of Weather
 
