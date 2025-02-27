@@ -948,21 +948,12 @@ footer{
     justify-content: flex-end;
   }
   .project-card-container{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
     max-width: 480px;
     gap: 2em;
   }
   .project-card{
-    display: flex;
-    flex-direction: column;
     width: 10em;
     height: 16em;
-    background-color: var(--background-color);
-    border: 1px solid var(--toupe-color);
-    border-radius: 3px;
-    padding: 1em;
   }
   .project-icon-container{
     height: 25%;
@@ -970,7 +961,6 @@ footer{
   }
 
   .project-card-header{
-    font-family: var(--headers-font);
     font-size: 1.1em;
     font-weight: 500;
     margin-bottom: 1em;
