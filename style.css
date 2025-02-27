@@ -603,7 +603,7 @@ background-color: var(--hero-city-color);
     height: 22px;
   }
   .skills-divider .skills-fill {
-    fill: #DEDDD9;
+    fill: var(--hero-city-color);
   }
 
 
@@ -624,7 +624,7 @@ background-color: var(--hero-city-color);
     transform: rotateY(180deg);
   }
   .project-divider .project-fill {
-    fill: #ECEBE6;
+    fill: var(--background-color);
   }
   /* Skills divider */
   .contact-divider {
@@ -666,9 +666,8 @@ background-color: var(--hero-city-color);
 }
 
 .footer-divider .footer-fill {
-    fill: #DEDDD9;
+    fill: var(--background-color);
 }
-
 
 /* w. END of Changing Backgrounds */
 
