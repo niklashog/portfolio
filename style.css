@@ -678,7 +678,7 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   font-family: var(--body-font);
   height: 10em;
   background-color: var(--timber-color);
@@ -688,35 +688,14 @@ footer{
   justify-content: center;
   align-items: center;
 }
-
-#beam-container{
-  display: flex;
-  flex-flow: column;
-  position: relative;
-  width: 200px;
-  text-align: center;
-  vertical-align: center;
-  margin-bottom: 3em;
-}
-#beam-me-up{
-  position: absolute;
-  display: inline-block;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  transform: rotate(-22deg);
-  font-size: 0.8em;
-  color: var(--primary-color);
-}
 #weatherContainer{
   display: flex;
+  flex-flow: column wrap;
+  align-items: center;
   align-self: flex-end;
   margin-right: 3em;
-}
-#weatherInfo{
   color: var(--primary-color-faded);
 }
-
 
 
 
