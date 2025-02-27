@@ -908,9 +908,6 @@ nav ul a{
   padding: 0em 0.5em;
   text-decoration: none;
 }
-article{
-  margin-bottom: 2em;
-}
 /* END Navbar & Header */
 
 /* 4. START of Hero section */
@@ -1044,7 +1041,6 @@ width: 100%;
   article{
     width: 100%;
     max-width: 480px;
-    margin-bottom: 2em;
   }
 
   /* END Navbar & Header */
@@ -1190,7 +1186,6 @@ nav ul a{
 article{
   width: 100%;
   max-width: 480px;
-  margin-bottom: 2em;
 }
 
 /* 4. START of Hero section */
