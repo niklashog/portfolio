@@ -101,14 +101,19 @@ fetch(url)
       const icon = data.weather[0].icon;
       const iconUrl = `https://openweathermap.org/img/wn/${icon}.png`;
       
-      document.querySelector(
-        "#weatherInfo"
-      ).innerHTML = `${location} just nu: ${temperature}°C`;
-      
-      
       const weatherIcon = document.querySelector("#weatherIcon");
       weatherIcon.src = iconUrl;
       weatherIcon.alt = data.weather[0].description;
+
+      document.querySelector(
+        "#weatherInfo"
+      ).innerHTML = `${temperature}°C`;
+      
+      document.querySelector(
+        "#weatherCity"
+      ).innerHTML = `${location}`;
+      
+
 
     })
     .catch((error) => {
