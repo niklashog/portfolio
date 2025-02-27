@@ -769,11 +769,6 @@ footer{
 @media (min-width: 1024) and (max-width: 1920){
 
     /* 3. START of Global styling */
-
-    body, html {
-      line-height: 1.5;
-      font-size: 1em;
-    }
     section{
       scroll-margin-top: 17em;
       width: 100%;
@@ -782,28 +777,12 @@ footer{
       padding-top: 4em;
       padding-bottom: 6em;
     }
-    article{
-      width: 100%;
-      max-width: 1920px;
-      margin-bottom: 2em;
-    }
     
     .no-split{
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      width: 100%;
       padding: 0em 1em;
-    }
-    .centered-content{
-      width: 852px;
     }
     
     .vertical-split{
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      width: 100%;
       padding: 0em 1em;
     }
 
@@ -811,10 +790,6 @@ footer{
 
 
   /* 4. START of Hero section */
-  #hero{
-    width: 100vw;
-    height: 100vh;
-  }
   #hero::after{
     content: '';
     position: absolute;
@@ -827,42 +802,7 @@ footer{
     opacity: 0.07;
     z-index: -1;
   }
-    .hero-top{
-      height: 55%;
-    }
 
-    /* Top Left */
-      .hero-cards-container{
-        width: 13em;
-        height: 20em;
-        font-size: 1.5em;
-      }
-      .hero-cards-container span {
-        font-family: var(--hero-cards-font);
-        display: inline-block;
-        opacity: 0;
-        animation: fallDown 0.45s ease forwards;
-        padding: 0.5em 1.1em;
-      }
-    /* Top Right */
-      .my-name-container{
-        color: var(--primary-color);
-        width: 22em;
-        margin-left: 2em;
-        opacity: 1;
-      }
-      .my-name{
-        font-family: var(--headers-font);
-        font-size: 5em;
-        line-height: 1.2em;
-        letter-spacing: -2px;
-      }
-      .hero-subheader{
-        color: var(--primary-color-faded);
-        margin-top: 2em;
-        margin-left: 2em;
-        width: 22em;
-      }
   /* END of Hero section */
 
   /* 5 START of About me */
@@ -879,46 +819,28 @@ footer{
   }
   .quote{
     font-size: 0.9em;
-    color: var(--primary-color-faded);
     font-style: italic;
   }
   .cite{
     font-size: 0.9em;
-    color: var(--primary-color-faded);
   }
   /* END of About me */
 
 
   /* w. START of Changing Backgrounds */
-  #skills-top{
-    width: 100%;
-    height: 5em;
-  }
-
+  #skills-top,
+  #contact-top,
   #project-top{
-    height: 5em;
-    width: 100%;
-  }
-
-  #contact-top{
     width: 100%;
     height: 5em;
   }
 
   /* w. END of Changing Backgrounds */
 
-
   footer{
     height: 8em;
   }
 }
-
-
-
-/* @media (min-width: 909px) and (max-width: 1024px){
-
-
-} */
  
 @media (min-width: 768px) and (max-width: 908px){
   
