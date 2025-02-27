@@ -342,7 +342,7 @@ width: 900px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  scroll-margin-top: 16em;
+  scroll-margin-top: 14em;
   padding-top: 24em;
 }
 #profile-picture-container{
@@ -392,7 +392,7 @@ width: 900px;
   background-position-x:70%;
   background-position-y: 25%;
   background-repeat: no-repeat;
-  scroll-margin-top: 24em;
+  scroll-margin-top: 18em;
 }
 .icon{
   width: 30px;
@@ -571,36 +571,23 @@ textarea:focus{
 
 
 /* w. START of Changing Backgrounds */
-#about{
-  background-color: var(--hero-city-color);
-}
-#skills-top{
-  position: relative;
-  width: 100%;
-  height: 10em;
-}
-
+#about,
 #project,
 #project-top{
 background-color: var(--hero-city-color);
-
 }
+#contact-top,
+#skills-top,
 #project-top{
   position: relative;
-  height: 10em;
-  width: 100%;
-}
-
-#contact-top{
-  position: relative;
   width: 100%;
   height: 10em;
 }
-
 #footer,
 #footer-top{
   position: relative;
 }
+/* w. END of Changing Backgrounds */
 
   /* Project divider */
   .skills-divider {
