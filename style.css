@@ -37,12 +37,12 @@ ol {
 
 /* 1. START CSS Custom Properties */
 :root{
-  --primary-color: #322d39;
+  --primary-color: rgb(50, 45, 57);
   --primary-color-faded: rgb(105, 102, 109);
-  --toupe-color: #8b878f;
+  --toupe-color: rgb(139, 135, 143);
   --timber-color: rgb(211, 208, 203);
-  --accent-color: #8570ab;
-  --background-color: #ecebe6; /* ECEBE6 */
+  --accent-color: rgb(133, 112, 171);
+  --background-color: rgb(236, 235, 230); /* ECEBE6 */
   --background-colora: rgba(236, 235, 230, 0.95);
   --hero-city-color: rgb(222, 221, 217);  /* DEDDD9 */
   --formular-background-color: whitesmoke;
