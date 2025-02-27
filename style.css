@@ -12,9 +12,10 @@
 7. Projects
 8. Contact
 9. Weather
-w. Changing backgrounds
-x. Footer
-y. Buttons
+10. Changing backgrounds
+11. Footer
+12. Buttons
+13. MediaQuerys
 
 Table of Contents */
 
@@ -229,7 +230,7 @@ ul li::marker{
   background-image: url('/images/hsand_bg_edited4.jpg');
   height: 100%;
   width: 2560px;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
   opacity: 0.07;
@@ -568,7 +569,7 @@ textarea:focus{
 /* END of Contact */
 
 
-/* w. START of Changing Backgrounds */
+/* 10. START of Changing Backgrounds */
 #about,
 #project,
 #project-top{
@@ -585,7 +586,7 @@ background-color: var(--hero-city-color);
 #footer-top{
   position: relative;
 }
-/* w. END of Changing Backgrounds */
+/* END of Changing Backgrounds */
 
   /* Project divider */
   .skills-divider {
@@ -672,7 +673,7 @@ background-color: var(--hero-city-color);
 /* w. END of Changing Backgrounds */
 
 
-/* x. START of Footer */
+/* 11. START of Footer */
 footer{
   display: flex;
   justify-content: center;
@@ -707,10 +708,10 @@ footer{
   width: 30%;
 }
 
-/* x. END of Footer */
+/* END of Footer */
 
 
-/* START of Buttons */
+/* 12. START of Buttons */
 .submit-button{
   border: 2px var(--accent-color) solid;
   font-weight: 600;
@@ -749,7 +750,7 @@ footer{
 
 
 
-/* START MEDIAQUERYS */
+/* 13. START MEDIAQUERYS */
 
 
 
@@ -831,9 +832,14 @@ footer{
  
 @media (min-width: 768px) and (max-width: 908px){
   
+  /* 3. START of Global */
   section{
     scroll-margin-top: 7em;
   }
+  
+  /* END of Global styling */
+
+  /* START of About me */
 
   #testamon-article{
     display: flex;
@@ -849,6 +855,7 @@ footer{
   #testamonials ul{
     padding: 1em 0em;
   }
+  /* END of About me */
 
     /* START of Project Cards */
   #project .centered-content{
@@ -882,6 +889,7 @@ footer{
 
 
 @media (min-width: 481px) and (max-width: 768px){
+
 /* 2. START Navbar & Header */
 
 section{
@@ -917,7 +925,6 @@ nav ul a{
   z-index: 2;
 }
 
-/* START Top Left*/
 .hero-left{
   position: absolute;
   top: 34em;
@@ -932,16 +939,13 @@ nav ul a{
   font-size: 1.2em;
 }
 
-/* END Top Left*/
-
-/* START Top Right*/
 .hero-right{
   position: absolute;
   top: 6em;
   left: center;
   z-index: 1;
 }
-/* END Top Right*/
+
 
 /* START of About Me */
 
@@ -956,6 +960,7 @@ nav ul a{
   padding: 1em;
 }
 /* END of About Me */
+
 
 /* START of skills */
 .skills-container {
@@ -1012,8 +1017,12 @@ width: 100%;
 
 @media (min-width: 400px) and (max-width: 480px){
 
+    /* 2. START of Global styling */
+
   section{
     scroll-margin-top: 2em;
+    /* 2. END of Global styling */
+
   }
 
   /* 2. START Navbar & Header */
