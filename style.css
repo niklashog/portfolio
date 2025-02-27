@@ -676,28 +676,37 @@ background-color: var(--hero-city-color);
 /* x. START of Footer */
 footer{
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: row;
+  align-items: center;
   font-family: var(--body-font);
   height: 10em;
   background-color: var(--timber-color);
+}
+.footer-container{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  position: sticky;
+  width: 100%;
+}
+#thirtypercent{
+  width: 30%;
 }
 .socials-container{
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 30%;
 }
 #weatherContainer{
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   align-items: center;
-  align-self: flex-end;
-  margin-right: 3em;
+  justify-content: center;
+  justify-self: center;
   color: var(--primary-color-faded);
+  width: 30%;
 }
-
-
 
 /* x. END of Footer */
 
