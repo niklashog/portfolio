@@ -110,9 +110,6 @@ fetch(url)
       weatherIcon.src = iconUrl;
       weatherIcon.alt = data.weather[0].description;
 
-      document.querySelector(
-        "#weatherIcon"
-      ).innerHTML = `<img src="${iconUrl}" alt="${data.weather[0].description}">`;
     })
     .catch((error) => {
       console.error("Det gick inte att hämta väderdata:", error);
