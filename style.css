@@ -482,7 +482,8 @@ width: 900px;
     .project-card-body{
       font-size: 0.8em;
     }
-    #hotelApp{
+    #hotelApp,
+    #bankApp{
       cursor: pointer;
     }
     /* END of Project Cards */

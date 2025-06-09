@@ -80,6 +80,18 @@ hotelApp.addEventListener('click', () =>{
   link.click();
 });
 
+const bankApp = document.querySelector('#bankApp');
+
+bankApp.addEventListener('click', () =>{
+  const link = document.createElement('a');
+  link.href ='https://github.com/niklashog/BankApp/';
+  link.target = '_blank';
+
+  document.body.appendChild(link);
+
+  link.click();
+});
+
 //END Links to projects
 
 
