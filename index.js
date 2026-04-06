@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // Hotel
 const aiChatbot = document.querySelector('#aiChatbot');
 
-hotelApp.addEventListener('click', () =>{
+aiChatbot.addEventListener('click', () =>{
   const link = document.createElement('a');
   link.href ='https://github.com/niklashog/AIChatBot/';
   link.target = '_blank';
