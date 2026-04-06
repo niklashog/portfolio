@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
 //START Links to projects
 
 // Hotel
-const hotelApp = document.querySelector('#hotelApp');
+const aiChatbot = document.querySelector('#aiChatbot');
 
 hotelApp.addEventListener('click', () =>{
   const link = document.createElement('a');

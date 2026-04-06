@@ -482,7 +482,8 @@ width: 900px;
     .project-card-body{
       font-size: 0.8em;
     }
-    #hotelApp,
+    #aiChatbot,
+    #pingisApp,
     #bankApp{
       cursor: pointer;
     }
