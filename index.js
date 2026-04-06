@@ -72,14 +72,15 @@ const hotelApp = document.querySelector('#hotelApp');
 
 hotelApp.addEventListener('click', () =>{
   const link = document.createElement('a');
-  link.href ='https://github.com/niklashog/Hotel_Transylvania/';
+  link.href ='https://github.com/niklashog/AIChatBot/';
   link.target = '_blank';
 
   document.body.appendChild(link);
 
   link.click();
 });
-
+ 
+//Bankapp
 const bankApp = document.querySelector('#bankApp');
 
 bankApp.addEventListener('click', () =>{
@@ -91,6 +92,22 @@ bankApp.addEventListener('click', () =>{
 
   link.click();
 });
+
+//Pingisräknare
+const pingisApp = document.querySelector('#pingisApp');
+
+pingisApp.addEventListener('click', () =>{
+  const link = document.createElement('a');
+  link.href ='https://github.com/niklashog/AgileGroup_PingPing';
+  link.target = '_blank';
+
+  document.body.appendChild(link);
+
+  link.click();
+});
+
+
+
 
 //END Links to projects
 
