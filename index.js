@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //START Links to projects
 
-// Hotel
+// AI Chatbot
 const aiChatbot = document.querySelector('#aiChatbot');
 
 aiChatbot.addEventListener('click', () =>{
