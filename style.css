@@ -411,11 +411,11 @@ width: 900px;
 }
 
 .skills-container ul {
-  padding-left: 1.2em;
+  padding-left: 1em;
   display: flex;
   flex-flow: column wrap;
   height: 100%;
-  width: 60%;
+  width: 70%;
 }
 
 .skills-container li {
