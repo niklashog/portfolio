@@ -117,6 +117,28 @@ pingisApp.addEventListener('click', () =>{
 window.onload = () => {
   const url = 'https://api.openweathermap.org/data/2.5/weather?lat=62.632922&lon=17.799248&units=metric&lang=sv&appid=8442f21f549f1ef24a8124568a2536af'
 
+  // Weather icon mapping
+  const weatherIconMap = {
+    '01d': 'fa-sun',
+    '01n': 'fa-moon',
+    '02d': 'fa-cloud-sun',
+    '02n': 'fa-cloud-moon',
+    '03d': 'fa-cloud',
+    '03n': 'fa-cloud',
+    '04d': 'fa-cloud',
+    '04n': 'fa-cloud',
+    '09d': 'fa-cloud-rain',
+    '09n': 'fa-cloud-rain',
+    '10d': 'fa-cloud-rain',
+    '10n': 'fa-cloud-rain',
+    '11d': 'fa-bolt',
+    '11n': 'fa-bolt',
+    '13d': 'fa-snowflake',
+    '13n': 'fa-snowflake',
+    '50d': 'fa-smog',
+    '50n': 'fa-smog'
+  };
+
 fetch(url)
     .then((response) => {
       if (!response.ok) {
@@ -128,10 +150,10 @@ fetch(url)
       const temperature = data.main.temp;
       const location = data.name;
       const icon = data.weather[0].icon;
-      const iconUrl = `https://openweathermap.org/img/wn/${icon}.png`;
+      const iconClass = weatherIconMap[icon] || 'fa-cloud';
       
       const weatherIcon = document.querySelector("#weatherIcon");
-      weatherIcon.src = iconUrl;
+      weatherIcon.innerHTML = `<i class="fa-solid ${iconClass}"></i>`;
       weatherIcon.alt = data.weather[0].description;
 
       document.querySelector(
@@ -141,9 +163,6 @@ fetch(url)
       document.querySelector(
         "#weatherCity"
       ).innerHTML = `${location}`;
-      
-
-
     })
     .catch((error) => {
       console.error("Det gick inte att hämta väderdata:", error);
